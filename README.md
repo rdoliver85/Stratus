@@ -23,4 +23,5 @@ This platform aggregates job listings from multiple sources (Adzuna, USAJobs, JS
 Richard Oliver - Arkansas Tech University
 
 ## Status
-In Development - Demonstration scheduled for December 13, 2025
+
+In Development - Demonstration tentatively expected in early December 2025
