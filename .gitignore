@@ -1,0 +1,23 @@
+# Python
+*.pyc
+__pycache__/
+*.py[cod]
+venv/
+
+# Django
+*.log
+db.sqlite3
+/media
+/staticfiles
+
+# Environment variables - NEVER commit passwords!
+.env
+*.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
