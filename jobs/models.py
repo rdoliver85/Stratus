@@ -57,6 +57,30 @@ class Job(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
+# VETERAN-SPECIFIC FIELDS
+    is_veteran_friendly = models.BooleanField(default=False, help_text="Company supports veteran hiring")
+    veteran_preference = models.BooleanField(default=False, help_text="Veterans given hiring preference")
+    military_spouse_preference = models.BooleanField(default=False)
+    
+    CLEARANCE_LEVELS = [
+        ('none', 'No Clearance Required'),
+        ('confidential', 'Confidential'),
+        ('secret', 'Secret'),
+        ('top_secret', 'Top Secret'),
+        ('ts_sci', 'TS/SCI'),
+    ]
+    security_clearance = models.CharField(max_length=20, choices=CLEARANCE_LEVELS, default='none', blank=True)
+    
+# Military Occupational Specialty (MOS) codes that match this job
+    applicable_mos_codes = models.TextField(blank=True, help_text="Comma-separated MOS codes")
+    
+# Military skills translation
+    military_skills_valued = models.TextField(blank=True, help_text="Military skills applicable: leadership, logistics, technical, etc.")
+    
+# Veteran benefits
+    veteran_benefits = models.TextField(blank=True, help_text="GI Bill support, transition assistance, etc.")
+    offers_transition_support = models.BooleanField(default=False)
+    
     class Meta:
         db_table = 'jobs'
         ordering = ['-created_at']

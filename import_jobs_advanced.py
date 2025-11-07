@@ -249,21 +249,15 @@ def import_from_adzuna(search_term='software', location='United States', max_res
 # USAJOBS API INTEGRATION
 # ================================
 
-def import_from_usajobs(keyword='developer', max_results=100):
-    """Import federal government jobs from USAJobs API"""
-    
+def import_veteran_jobs_usajobs():
+    """Import veteran preference jobs from USAJobs"""
     config = API_CONFIGS['usajobs']
     if not config['enabled']:
-        print("❌ USAJobs API not configured. Set credentials in API_CONFIGS.")
         return 0
     
-    print(f"\n{'='*60}")
-    print(f"IMPORTING FROM USAJOBS (Federal Government)")
-    print(f"Keyword: {keyword}")
-    print(f"{'='*60}")
-    
-    imported = 0
-    page = 1
+    print("\n" + "="*60)
+    print("IMPORTING VETERAN PREFERENCE JOBS FROM USAJOBS")
+    print("="*60)
     
     headers = {
         'Host': 'data.usajobs.gov',
@@ -271,98 +265,63 @@ def import_from_usajobs(keyword='developer', max_results=100):
         'Authorization-Key': config['api_key']
     }
     
-    while imported < max_results:
-        params = {
-            'Keyword': keyword,
-            'ResultsPerPage': 50,
-            'Page': page
-        }
-        
-        try:
-            response = requests.get(config['base_url'], headers=headers, params=params, timeout=15)
-            response.raise_for_status()
-            data = response.json()
-            
-            jobs_data = data.get('SearchResult', {}).get('SearchResultItems', [])
-            if not jobs_data:
-                break
-            
-            for item in jobs_data:
-                try:
-                    job_data = item.get('MatchedObjectDescriptor', {})
-                    
-                    title = job_data.get('PositionTitle', 'Government Position')
-                    org_name = job_data.get('OrganizationName', 'U.S. Federal Government')
-                    
-                    # Check for duplicates
-                    job_hash = generate_job_hash(title, org_name, 'Federal')
-                    if Job.objects.filter(description__contains=job_hash[:16]).exists():
-                        continue
-                    
-                    # Create government agency as company
-                    company = get_or_create_company(
-                        org_name,
-                        {'description': 'U.S. Federal Government Agency'}
-                    )
-                    
-                    # Generate slug
-                    base_slug = slugify(title)
-                    slug = base_slug
-                    counter = 1
-                    while Job.objects.filter(slug=slug).exists():
-                        slug = f"{base_slug}-{counter}"
-                        counter += 1
-                    
-                    # Parse salary
-                    salary_min = job_data.get('PositionRemuneration', [{}])[0].get('MinimumRange')
-                    salary_max = job_data.get('PositionRemuneration', [{}])[0].get('MaximumRange')
-                    
-                    # Location
-                    locations = job_data.get('PositionLocation', [])
-                    city = locations[0].get('CityName', '') if locations else ''
-                    state = locations[0].get('LocationName', '') if locations else ''
-                    
-                    # Qualifications summary
-                    qualifications = job_data.get('QualificationSummary', '')
-                    user_area = job_data.get('UserArea', {})
-                    details_url = user_area.get('Details', {}).get('DetailsURL', '')
-                    
-                    description = f"{qualifications}\n\nApply at: {details_url}\n\nSource: USAJobs"
-                    
-                    job = Job.objects.create(
-                        title=title[:200],
-                        slug=slug,
-                        description=f"{description}\n\nJob ID: {job_hash[:16]}",
-                        company=company,
-                        employment_type='full_time',
-                        experience_level=determine_experience_level(title, qualifications),
-                        salary_min=int(salary_min) if salary_min else None,
-                        salary_max=int(salary_max) if salary_max else None,
-                        location_city=city[:100],
-                        location_state=state[:50],
-                        location_country='US',
-                        is_remote=False,
-                        status='active'
-                    )
-                    
-                    imported += 1
-                    print(f"✓ [{imported}] {title} - {org_name}")
-                    
-                    if imported >= max_results:
-                        break
-                        
-                except Exception as e:
-                    print(f"✗ Error importing job: {str(e)}")
-                    continue
-            
-            page += 1
-            time.sleep(0.5)
-            
-        except Exception as e:
-            print(f"❌ API request failed: {str(e)}")
-            break
+    imported = 0
     
-    print(f"\n✅ Imported {imported} jobs from USAJobs\n")
+    params = {
+        'Keyword': 'veteran',
+        'ResultsPerPage': 50,
+        'Page': 1
+    }
+    
+    try:
+        response = requests.get(config['base_url'], headers=headers, params=params, timeout=15)
+        response.raise_for_status()
+        data = response.json()
+        
+        for item in data.get('SearchResult', {}).get('SearchResultItems', []):
+            try:
+                job_data = item.get('MatchedObjectDescriptor', {})
+                title = job_data.get('PositionTitle', 'Government Position')
+                org_name = job_data.get('OrganizationName', 'U.S. Government')
+                
+                if Job.objects.filter(title=title, company__name=org_name).exists():
+                    continue
+                
+                company = get_or_create_company(org_name)
+                
+                slug = slugify(title)
+                counter = 1
+                while Job.objects.filter(slug=slug).exists():
+                    slug = f"{slugify(title)}-{counter}"
+                    counter += 1
+                
+                qualifications = job_data.get('QualificationSummary', '')
+                
+                Job.objects.create(
+                    title=title[:200],
+                    slug=slug,
+                    description=qualifications[:5000],
+                    company=company,
+                    employment_type='full_time',
+                    experience_level='mid_level',
+                    location_city='Washington',
+                    location_state='DC',
+                    location_country='US',
+                    status='active',
+                    is_veteran_friendly=True,
+                    veteran_preference=True,
+                    security_clearance='secret'
+                )
+                
+                imported += 1
+                print(f"✓ [{imported}] {title}")
+                
+            except Exception as e:
+                continue
+    
+    except Exception as e:
+        print(f"Error: {e}")
+    
     return imported
 
 # ================================
