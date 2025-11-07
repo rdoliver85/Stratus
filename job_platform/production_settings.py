@@ -31,9 +31,9 @@ DATABASES = {
     }
 }
 
-# Static files
+# Static files - simplified
 STATIC_URL = '/static/'
-STATIC_ROOT = '/app/staticfiles'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 # Security - Railway proxy settings
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
