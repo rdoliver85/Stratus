@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'accounts',
     'companies',
     'application',
+    'public_site',
 ]
 
 MIDDLEWARE = [

@@ -11,6 +11,7 @@ class Job(models.Model):
     requirements = models.TextField(blank=True, null=True)
     responsibilities = models.TextField(blank=True, null=True)
     benefits = models.TextField(blank=True, null=True)
+    application_url = models.URLField(max_length=500, blank=True, null=True)
     
     EMPLOYMENT_TYPES = [
         ('full_time', 'Full Time'),

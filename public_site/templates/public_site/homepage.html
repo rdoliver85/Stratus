@@ -1,0 +1,127 @@
+{% extends 'public_site/base.html' %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="text-center">
+            <h1 class="text-5xl md:text-6xl font-bold text-gray-900 mb-6">
+                Find Your Next <span class="text-blue-600">Technology Role</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Connecting talented professionals with leading technology companies. 
+                <span class="text-blue-600 font-semibold">{{ total_jobs }} active positions</span> across 
+                <span class="text-blue-600 font-semibold">{{ veteran_jobs_count }} veteran-friendly</span> opportunities.
+            </p>
+            
+            <!-- Quick Stats -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-12">
+                <div class="glass-dark rounded-xl p-6 hover:shadow-lg transition">
+                    <div class="text-3xl font-bold text-blue-600">{{ total_jobs }}</div>
+                    <div class="text-gray-600 mt-2">Active Tech Jobs</div>
+                </div>
+                <div class="glass-dark rounded-xl p-6 hover:shadow-lg transition">
+                    <div class="text-3xl font-bold text-blue-600">{{ veteran_jobs_count }}</div>
+                    <div class="text-gray-600 mt-2">Veteran-Friendly</div>
+                </div>
+                <div class="glass-dark rounded-xl p-6 hover:shadow-lg transition">
+                    <div class="text-3xl font-bold text-blue-600">{{ clearance_jobs_count }}</div>
+                    <div class="text-gray-600 mt-2">Require Clearance</div>
+                </div>
+            </div>
+            
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="{% url 'public_site:job_list' %}" class="glass-dark px-8 py-4 rounded-xl text-blue-600 font-semibold hover:shadow-xl transition">
+                    Browse All Jobs
+                </a>
+                <a href="{% url 'public_site:job_list' %}?veteran_friendly=on" class="bg-blue-600 px-8 py-4 rounded-xl text-white font-semibold hover:bg-blue-700 hover:shadow-xl transition">
+                    Veteran Opportunities
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Featured Jobs Section -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <h2 class="text-3xl font-bold text-gray-900 mb-8">Featured Opportunities</h2>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        {% for job in recent_jobs|slice:":4" %}
+        <a href="{% url 'public_site:job_detail' job.job_id %}" class="glass-dark rounded-xl p-6 hover:shadow-xl transition block">
+            <div class="flex justify-between items-start mb-4">
+                <div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-2">{{ job.title }}</h3>
+                    <p class="text-gray-600">{{ job.company.name }}</p>
+                </div>
+                {% if job.is_veteran_friendly %}
+                <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">Veteran Friendly</span>
+                {% endif %}
+            </div>
+            
+            <div class="flex items-center text-sm text-gray-600 space-x-4">
+                <span>📍 {{ job.location_city }}, {{ job.location_state }}</span>
+                {% if job.is_remote %}
+                <span class="bg-green-100 text-green-800 px-2 py-1 rounded">Remote</span>
+                {% endif %}
+            </div>
+        </a>
+        {% empty %}
+        <p class="text-gray-600 col-span-2">No jobs available at this time.</p>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Veteran Section -->
+{% if veteran_jobs_count > 0 %}
+<div class="glass mt-16 py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Opportunities for Veterans</h2>
+            <p class="text-xl text-gray-600">Companies actively seeking veteran talent</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {% for job in recent_jobs %}
+            {% if job.is_veteran_friendly %}
+            <a href="{% url 'public_site:job_detail' job.job_id %}" class="glass-dark rounded-xl p-6 hover:shadow-xl transition block">
+                <div class="mb-4">
+                    <span class="bg-blue-100 text-blue-800 text-xs font-semibold px-3 py-1 rounded-full">🎖️ Veteran Preferred</span>
+                </div>
+                <h3 class="text-lg font-semibold text-gray-900 mb-2">{{ job.title }}</h3>
+                <p class="text-gray-600 text-sm mb-3">{{ job.company.name }}</p>
+                <div class="text-sm text-gray-500">
+                    📍 {{ job.location_city }}, {{ job.location_state }}
+                </div>
+                {% if job.security_clearance != 'none' %}
+                <div class="mt-2">
+                    <span class="bg-red-100 text-red-800 text-xs px-2 py-1 rounded">{{ job.get_security_clearance_display }}</span>
+                </div>
+                {% endif %}
+            </a>
+            {% endif %}
+            {% endfor %}
+        </div>
+        
+        <div class="text-center mt-8">
+            <a href="{% url 'public_site:job_list' %}?veteran_friendly=on" class="inline-block bg-blue-600 px-8 py-3 rounded-xl text-white font-semibold hover:bg-blue-700 transition">
+                View All Veteran Opportunities →
+            </a>
+        </div>
+    </div>
+</div>
+{% endif %}
+
+<!-- About Section -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+    <div class="glass-dark rounded-2xl p-12 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-6">About Stratus</h2>
+        <p class="text-lg text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Stratus is a specialized technology career platform connecting talented professionals with leading companies. 
+            We aggregate opportunities from top employers and provide enhanced visibility for veteran-friendly positions, 
+            security clearance requirements, and military skills translation.
+        </p>
+    </div>
+</div>
+{% endblock %}

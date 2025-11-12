@@ -77,7 +77,7 @@ def clean_text(text):
         return ""
     text = re.sub(r'<[^>]+>', '', text)
     text = ' '.join(text.split())
-    return text[:5000]
+    return text
 
 def is_tech_job(title, description):
     """Verify job is actually technology-related"""
@@ -183,7 +183,8 @@ def import_tech_veteran_adzuna(search_term, max_results=30):
                     status='active',
                     is_veteran_friendly=is_vet_friendly,
                     security_clearance=clearance,
-                    military_skills_valued='Technical skills, security clearance, leadership' if is_vet_friendly else ''
+                    military_skills_valued='Technical skills, security clearance, leadership' if is_vet_friendly else '',
+                    application_url=job_data.get('redirect_url', '')  # ADD THIS LINE
                 )
                 
                 imported += 1
@@ -265,7 +266,8 @@ def import_tech_veteran_jsearch(search_term, max_results=25):
                     status='active',
                     is_veteran_friendly=is_vet_friendly,
                     security_clearance=clearance,
-                    military_skills_valued='Technology and military experience valued' if is_vet_friendly else ''
+                    military_skills_valued='Technology and military experience valued' if is_vet_friendly else '',
+		    application_url=job_data.get('job_apply_link', '')
                 )
                 
                 imported += 1

@@ -1,0 +1,166 @@
+{% extends 'public_site/base.html' %}
+
+{% block title %}{{ job.title }} at {{ job.company.name }} - Stratus{% endblock %}
+
+{% block content %}
+<div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    
+    <!-- Back Button -->
+    <a href="{% url 'public_site:job_list' %}" class="inline-flex items-center text-blue-600 hover:text-blue-700 mb-6">
+        ← Back to Jobs
+    </a>
+
+    <!-- Job Header with Veteran Badges -->
+    <div class="glass-dark rounded-xl p-8 mb-6">
+        <div class="mb-4">
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{{ job.title }}</h1>
+            <p class="text-xl text-gray-600">{{ job.company.name }}</p>
+        </div>
+
+        <!-- Veteran & Clearance Badges - Prominent at Top -->
+        <div class="flex flex-wrap gap-3 mb-6">
+            {% if job.is_veteran_friendly %}
+            <div class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold">
+                🎖️ Veteran Friendly
+            </div>
+            {% endif %}
+            
+            {% if job.veteran_preference %}
+            <div class="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold">
+                ✓ Veteran Preference
+            </div>
+            {% endif %}
+            
+            {% if job.security_clearance != 'none' %}
+            <div class="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold">
+                🔒 {{ job.get_security_clearance_display }} Required
+            </div>
+            {% endif %}
+            
+            {% if job.offers_transition_support %}
+            <div class="bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold">
+                🤝 Transition Support Available
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Job Meta Info -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 text-sm">
+            <div>
+                <span class="text-gray-600">Location:</span>
+                <p class="font-medium text-gray-900">{{ location_display }}</p>
+            </div>
+            
+            <div>
+                <span class="text-gray-600">Employment Type:</span>
+                <p class="font-medium text-gray-900">{{ job.get_employment_type_display|default:"Not specified" }}</p>
+            </div>
+            
+            <div>
+                <span class="text-gray-600">Work Arrangement:</span>
+                <p class="font-medium text-gray-900">
+                    {% if job.is_remote %}Remote{% elif job.is_hybrid %}Hybrid{% else %}On-site{% endif %}
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Veteran-Specific Information (if applicable) -->
+    {% if job.military_skills_valued or job.applicable_mos_codes or job.veteran_benefits %}
+    <div class="glass rounded-xl p-8 mb-6 border-l-4 border-blue-600">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">For Veterans</h2>
+        
+        {% if job.military_skills_valued %}
+        <div class="mb-4">
+            <h3 class="font-semibold text-gray-900 mb-2">Valued Military Skills:</h3>
+            <p class="text-gray-700 whitespace-pre-line">{{ job.military_skills_valued }}</p>
+        </div>
+        {% endif %}
+        
+        {% if job.applicable_mos_codes %}
+        <div class="mb-4">
+            <h3 class="font-semibold text-gray-900 mb-2">Applicable MOS Codes:</h3>
+            <p class="text-gray-700">{{ job.applicable_mos_codes }}</p>
+        </div>
+        {% endif %}
+        
+        {% if job.veteran_benefits %}
+        <div>
+            <h3 class="font-semibold text-gray-900 mb-2">Veteran Benefits:</h3>
+            <p class="text-gray-700 whitespace-pre-line">{{ job.veteran_benefits }}</p>
+        </div>
+        {% endif %}
+    </div>
+    {% endif %}
+
+    <!-- Job Description -->
+    <div class="glass-dark rounded-xl p-8 mb-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Job Description</h2>
+        <div class="prose prose-blue max-w-none">
+            <p class="text-gray-700 whitespace-pre-line">{{ job.description }}</p>
+        </div>
+    </div>
+
+    <!-- Requirements -->
+    {% if job.requirements %}
+    <div class="glass-dark rounded-xl p-8 mb-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Requirements</h2>
+        <div class="prose prose-blue max-w-none">
+            <p class="text-gray-700 whitespace-pre-line">{{ job.requirements }}</p>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Responsibilities -->
+    {% if job.responsibilities %}
+    <div class="glass-dark rounded-xl p-8 mb-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Responsibilities</h2>
+        <div class="prose prose-blue max-w-none">
+            <p class="text-gray-700 whitespace-pre-line">{{ job.responsibilities }}</p>
+        </div>
+    </div>
+    {% endif %}
+
+    <!-- Benefits -->
+    {% if job.benefits %}
+    <div class="glass-dark rounded-xl p-8 mb-6">
+        <h2 class="text-2xl font-bold text-gray-900 mb-4">Benefits</h2>
+        <div class="prose prose-blue max-w-none">
+            <p class="text-gray-700 whitespace-pre-line">{{ job.benefits }}</p>
+        </div>
+    </div>
+    {% endif %}
+
+   
+    <!-- Apply Button -->
+    <div class="glass-dark rounded-xl p-8 text-center">
+    {% if job.application_url %}
+    <a href="{{ job.application_url }}" target="_blank" class="inline-block bg-blue-600 px-8 py-4 rounded-xl text-white font-bold text-lg hover:bg-blue-700 hover:shadow-xl transition">
+        Apply for This Position →
+    </a>
+    <p class="text-gray-600 text-sm mt-3">Opens in new window</p>
+    {% else %}
+    <button class="bg-gray-400 px-8 py-4 rounded-xl text-white font-bold text-lg cursor-not-allowed">
+        Application Link Not Available
+    </button>
+    {% endif %}
+    </div>
+
+    <!-- Related Jobs -->
+    {% if related_jobs %}
+    <div class="mt-12">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Related Opportunities</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            {% for related in related_jobs %}
+            <a href="{% url 'public_site:job_detail' related.job_id %}" class="glass-dark rounded-xl p-6 hover:shadow-xl transition block">
+                <h3 class="font-semibold text-gray-900 mb-2">{{ related.title }}</h3>
+                <p class="text-gray-600 text-sm mb-2">{{ related.company.name }}</p>
+                <p class="text-gray-500 text-sm">{{ related.location_city }}, {{ related.location_state }}</p>
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+    {% endif %}
+
+</div>
+{% endblock %}

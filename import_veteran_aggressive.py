@@ -70,7 +70,7 @@ def clean_text(text):
         return ""
     text = re.sub(r'<[^>]+>', '', text)
     text = ' '.join(text.split())
-    return text[:5000]
+    return text
 
 def generate_job_hash(title, company):
     """Generate hash to detect duplicates"""

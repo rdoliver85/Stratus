@@ -34,12 +34,12 @@ API_CONFIGS = {
         'api_key': '6B4ZzOGA0Ae2D2udWTvXbYtDr4dweZ4fbkynLNxDtA0=',  # From USAJobs email
         'user_agent': 'windsoftechnology@gmail.com',  # Your email
         'base_url': 'https://data.usajobs.gov/api/search',
-        'enabled': True,  # Change to True
+        'enabled': True,
     },
     'jsearch': {
         'api_key': 'eecba37741msh8aab8cab5e05f9ep185a20jsn9877c391a7b3',  # From RapidAPI
         'base_url': 'https://jsearch.p.rapidapi.com/search',
-        'enabled': True,  # Change to True
+        'enabled': False,
     }
 }
 
@@ -57,7 +57,7 @@ def clean_html(text):
     text = ' '.join(text.split())
     # Remove special characters but keep basic punctuation
     text = re.sub(r'[^\w\s.,!?;:()\-]', '', text)
-    return text[:5000]  # Limit length for database
+    return text  # Limit length for database
 
 def generate_job_hash(title, company, location):
     """Generate unique hash for duplicate detection"""
@@ -222,7 +222,8 @@ def import_from_adzuna(search_term='software', location='United States', max_res
                         latitude=job_data.get('latitude'),
                         longitude=job_data.get('longitude'),
                         is_remote='remote' in title.lower() or 'remote' in description.lower(),
-                        status='active'
+                        status='active',
+			application_url=job_data.get('redirect_url', '')
                     )
                     
                     imported += 1
@@ -250,13 +251,13 @@ def import_from_adzuna(search_term='software', location='United States', max_res
 # ================================
 
 def import_veteran_jobs_usajobs():
-    """Import veteran preference jobs from USAJobs"""
+    """Import tech jobs from USAJobs using job family codes"""
     config = API_CONFIGS['usajobs']
     if not config['enabled']:
         return 0
     
     print("\n" + "="*60)
-    print("IMPORTING VETERAN PREFERENCE JOBS FROM USAJOBS")
+    print("IMPORTING TECH JOBS FROM USAJOBS")
     print("="*60)
     
     headers = {
@@ -267,60 +268,64 @@ def import_veteran_jobs_usajobs():
     
     imported = 0
     
-    params = {
-        'Keyword': 'veteran',
-        'ResultsPerPage': 50,
-        'Page': 1
-    }
+    # Tech job family codes
+    tech_codes = ['2210', '1550', '0854']
     
-    try:
-        response = requests.get(config['base_url'], headers=headers, params=params, timeout=15)
-        response.raise_for_status()
-        data = response.json()
+    for code in tech_codes:
+        params = {
+            'JobCategoryCode': code,
+            'ResultsPerPage': 100,
+            'Page': 1
+        }
         
-        for item in data.get('SearchResult', {}).get('SearchResultItems', []):
-            try:
-                job_data = item.get('MatchedObjectDescriptor', {})
-                title = job_data.get('PositionTitle', 'Government Position')
-                org_name = job_data.get('OrganizationName', 'U.S. Government')
-                
-                if Job.objects.filter(title=title, company__name=org_name).exists():
+        try:
+            response = requests.get(config['base_url'], headers=headers, params=params, timeout=15)
+            response.raise_for_status()
+            data = response.json()
+            
+            for item in data.get('SearchResult', {}).get('SearchResultItems', []):
+                try:
+                    job_data = item.get('MatchedObjectDescriptor', {})
+                    title = job_data.get('PositionTitle', 'Government Position')
+                    org_name = job_data.get('OrganizationName', 'U.S. Government')
+                    
+                    if Job.objects.filter(title=title, company__name=org_name).exists():
+                        continue
+                    
+                    company = get_or_create_company(org_name)
+                    
+                    slug = slugify(title)
+                    counter = 1
+                    while Job.objects.filter(slug=slug).exists():
+                        slug = f"{slugify(title)}-{counter}"
+                        counter += 1
+                    
+                    qualifications = clean_html(job_data.get('QualificationSummary', ''))
+                    
+                    Job.objects.create(
+                        title=title[:200],
+                        slug=slug,
+                        description=qualifications,
+                        company=company,
+                        employment_type='full_time',
+                        experience_level='mid_level',
+                        location_city=job_data.get('PositionLocationDisplay', 'Washington')[:100],
+                        location_state='DC',
+                        location_country='US',
+                        status='active',
+                        application_url=job_data.get('PositionURI', '')
+                    )
+                    
+                    imported += 1
+                    print(f"✓ [{imported}] {title}")
+                    
+                except Exception as e:
                     continue
-                
-                company = get_or_create_company(org_name)
-                
-                slug = slugify(title)
-                counter = 1
-                while Job.objects.filter(slug=slug).exists():
-                    slug = f"{slugify(title)}-{counter}"
-                    counter += 1
-                
-                qualifications = job_data.get('QualificationSummary', '')
-                
-                Job.objects.create(
-                    title=title[:200],
-                    slug=slug,
-                    description=qualifications[:5000],
-                    company=company,
-                    employment_type='full_time',
-                    experience_level='mid_level',
-                    location_city='Washington',
-                    location_state='DC',
-                    location_country='US',
-                    status='active',
-                    is_veteran_friendly=True,
-                    veteran_preference=True,
-                    security_clearance='secret'
-                )
-                
-                imported += 1
-                print(f"✓ [{imported}] {title}")
-                
-            except Exception as e:
-                continue
-    
-    except Exception as e:
-        print(f"Error: {e}")
+            
+            time.sleep(1)
+        
+        except Exception as e:
+            print(f"Error with code {code}: {e}")
     
     return imported
 
@@ -409,7 +414,8 @@ def import_from_jsearch(query='Python developer', max_results=100):
                         latitude=job_data.get('job_latitude'),
                         longitude=job_data.get('job_longitude'),
                         is_remote=job_data.get('job_is_remote', False),
-                        status='active'
+                        status='active',
+			application_url=job_data.get('job_apply_link', '')
                     )
                     
                     imported += 1
@@ -446,19 +452,55 @@ def aggregate_jobs_from_all_sources():
     
     total_imported = 0
     
-    # Import from Adzuna
+    # Diverse tech search terms
+    adzuna_searches = [
+        'software engineer',
+        'data analyst', 
+        'cloud engineer',
+        'devops engineer',
+        'cybersecurity analyst',
+        'network engineer',
+        'full stack developer',
+        'backend developer',
+        'frontend developer',
+        'machine learning engineer',
+        'data scientist',
+        'systems administrator',
+        'database administrator',
+        'security engineer'
+    ]
+    
+    jsearch_queries = [
+        'software developer united states',
+        'data engineer united states',
+        'cloud architect united states',
+        'python developer united states',
+        'java developer united states',
+        'javascript developer united states',
+        'react developer united states',
+        'aws engineer united states',
+        'kubernetes engineer united states',
+        'ai engineer united states'
+    ]
+    
+    # Import from Adzuna with multiple searches
     if API_CONFIGS['adzuna']['enabled']:
-        total_imported += import_from_adzuna('software developer', 'United States', 150)
-        time.sleep(2)
+        for search_term in adzuna_searches:
+            count = import_from_adzuna(search_term, 'United States', 30)
+            total_imported += count
+            time.sleep(2)
     
-    # Import from USAJobs
+    # Import from USAJobs (tech codes)
     if API_CONFIGS['usajobs']['enabled']:
-        total_imported += import_from_usajobs('technology', 50)
+        total_imported += import_veteran_jobs_usajobs()
         time.sleep(2)
     
-    # Import from JSearch
+    # Import from JSearch with multiple searches
     if API_CONFIGS['jsearch']['enabled']:
-        total_imported += import_from_jsearch('Python developer in United States', 100)
+        for query in jsearch_queries:
+            count = import_from_jsearch(query, 30)
+            total_imported += count
+            time.sleep(3)
     
     # Final summary
     print("\n" + "="*60)

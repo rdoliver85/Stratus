@@ -37,7 +37,7 @@ def clean_text(text):
         return ""
     text = re.sub(r'<[^>]+>', '', text)
     text = ' '.join(text.split())
-    return text[:5000]
+    return text
 
 def get_or_create_company(company_name):
     if not company_name:
@@ -207,7 +207,7 @@ def import_veteran_jobs_usajobs():
                 Job.objects.create(
                     title=title[:200],
                     slug=slug,
-                    description=qualifications[:5000],
+                    description=qualifications,
                     company=company,
                     employment_type='full_time',
                     experience_level='mid_level',
