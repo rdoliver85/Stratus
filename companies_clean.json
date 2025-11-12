@@ -1,0 +1,3858 @@
+[
+{
+  "model": "companies.company",
+  "pk": "001c8d8f-cc08-4d04-a4f5-6576d819c605",
+  "fields": {
+    "name": "Amazon.com Services LLC",
+    "slug": "amazoncom-services-llc",
+    "description": "Amazon.com Services LLC is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:06:59.029Z",
+    "updated_at": "2025-10-24T20:06:59.029Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0081c323-ce09-4f9f-a683-fdd597a01bff",
+  "fields": {
+    "name": "Alumni Career Site",
+    "slug": "alumni-career-site",
+    "description": "Alumni Career Site is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:38:18.449Z",
+    "updated_at": "2025-11-12T15:38:18.449Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "01cb86be-4f7d-405a-9eb8-6088eb9d5298",
+  "fields": {
+    "name": "Houston Methodist Specialty Physician Group",
+    "slug": "houston-methodist-specialty-physician-group",
+    "description": "Houston Methodist Specialty Physician Group",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:31.436Z",
+    "updated_at": "2025-10-27T15:26:31.436Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "01d421a9-aa6f-4c67-a900-0936890a10a4",
+  "fields": {
+    "name": "Syntiant",
+    "slug": "syntiant",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:33:16.466Z",
+    "updated_at": "2025-10-27T15:33:16.466Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "01ed65ef-e88a-4b91-b991-df9b4a612fe0",
+  "fields": {
+    "name": "Zintellect",
+    "slug": "zintellect",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:34:09.765Z",
+    "updated_at": "2025-10-27T15:34:09.765Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "02fe629a-a017-4395-a8b6-22397b908a40",
+  "fields": {
+    "name": "Defense Security Cooperation Agency",
+    "slug": "defense-security-cooperation-agency",
+    "description": "U.S. Federal Government Agency",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:07:11.539Z",
+    "updated_at": "2025-10-24T20:07:11.539Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "032cd9c6-4d03-4703-8601-388cc18e80f3",
+  "fields": {
+    "name": "DataSeers Incorporated",
+    "slug": "dataseers-incorporated",
+    "description": "DataSeers Incorporated is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:24.075Z",
+    "updated_at": "2025-11-12T15:59:24.075Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "03667b46-136d-4baa-9228-f597aaf90f79",
+  "fields": {
+    "name": "Figure Eight Federal",
+    "slug": "figure-eight-federal",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-11T21:44:14.255Z",
+    "updated_at": "2025-11-11T21:44:14.255Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0376292c-42af-4da5-bb6e-97e00fe77c47",
+  "fields": {
+    "name": "Inverselogic",
+    "slug": "inverselogic",
+    "description": "Inverselogic is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:48.934Z",
+    "updated_at": "2025-11-12T15:59:48.934Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "038cc518-89ba-4f01-9019-0b53cf7147ca",
+  "fields": {
+    "name": "Kelly",
+    "slug": "kelly",
+    "description": "Kelly",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:56.340Z",
+    "updated_at": "2025-10-27T15:26:56.340Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "03b410cd-aee7-4607-9524-b44ac9e8b3f2",
+  "fields": {
+    "name": "Beusa Energy",
+    "slug": "beusa-energy",
+    "description": "Beusa Energy is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:05:31.377Z",
+    "updated_at": "2025-11-12T16:05:31.377Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "03f8bfa7-92dd-4a02-9114-09be70699b51",
+  "fields": {
+    "name": "OneMarketData",
+    "slug": "onemarketdata",
+    "description": "OneMarketData is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:01:34.708Z",
+    "updated_at": "2025-11-12T16:01:34.708Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "04a7f867-b36e-41ac-b823-434a997e6867",
+  "fields": {
+    "name": "SANS",
+    "slug": "sans",
+    "description": "SANS is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T14:56:47.620Z",
+    "updated_at": "2025-10-27T14:56:47.620Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "04fc50a9-004c-4310-a97e-22ba33efc104",
+  "fields": {
+    "name": "Annapurna Labs  Inc.",
+    "slug": "annapurna-labs-inc",
+    "description": "Annapurna Labs  Inc. is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:06:58.872Z",
+    "updated_at": "2025-10-24T20:06:58.872Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "050cd526-85ed-45e4-8dbb-949f7fff007c",
+  "fields": {
+    "name": "US IT Solutions Inc",
+    "slug": "us-it-solutions-inc",
+    "description": "US IT Solutions Inc is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:38:10.306Z",
+    "updated_at": "2025-11-12T15:38:10.306Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "050d51eb-ddba-4333-8808-a17dc6a2e4e6",
+  "fields": {
+    "name": "Mondrian Alpha",
+    "slug": "mondrian-alpha",
+    "description": "Mondrian Alpha is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:38:34.803Z",
+    "updated_at": "2025-11-12T15:38:34.803Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "056efa3f-f2b7-4e50-9080-a6b15e47835b",
+  "fields": {
+    "name": "iSphere Innovation Partners, LLC",
+    "slug": "isphere-innovation-partners-llc",
+    "description": "iSphere Innovation Partners, LLC is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:44.078Z",
+    "updated_at": "2025-11-12T15:59:44.078Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "056fbab1-2be4-4a24-a01f-7d8580e7122c",
+  "fields": {
+    "name": "Tzumi Electronics",
+    "slug": "tzumi-electronics",
+    "description": "Tzumi Electronics is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:24.368Z",
+    "updated_at": "2025-11-12T15:59:24.368Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "05ca7062-0dd5-4341-b901-b5385a201aec",
+  "fields": {
+    "name": "CFS",
+    "slug": "cfs",
+    "description": "CFS is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:43:42.084Z",
+    "updated_at": "2025-11-12T15:43:42.084Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "05f77ee7-cb63-47c1-979a-714457ed66de",
+  "fields": {
+    "name": "SAIC",
+    "slug": "saic",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:33:36.491Z",
+    "updated_at": "2025-10-27T15:33:36.491Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "061fd778-af1c-4f81-83a7-231ef3b6d447",
+  "fields": {
+    "name": "Stellantis",
+    "slug": "stellantis",
+    "description": "Stellantis is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:03:26.996Z",
+    "updated_at": "2025-11-12T16:03:26.996Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0634e722-f4cc-4f41-ad52-9461afac1c47",
+  "fields": {
+    "name": "The Oakleaf Group",
+    "slug": "the-oakleaf-group",
+    "description": "The Oakleaf Group is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T14:56:51.524Z",
+    "updated_at": "2025-10-27T14:56:51.524Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "089354ea-94f6-45e5-a5c9-9ba6ce275ed3",
+  "fields": {
+    "name": "Intelliforce-IT Solutions Group, LLC.",
+    "slug": "intelliforce-it-solutions-group-llc",
+    "description": "Intelliforce-IT Solutions Group, LLC. is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:01:05.964Z",
+    "updated_at": "2025-11-12T16:01:05.964Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0922b3cf-69ea-463c-9f4a-1fcf57c4d652",
+  "fields": {
+    "name": "SiloSmashers",
+    "slug": "silosmashers",
+    "description": "SiloSmashers is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:01:05.983Z",
+    "updated_at": "2025-11-12T16:01:05.983Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "09467557-89cb-4bf3-aef3-24101c96f519",
+  "fields": {
+    "name": "Rule14",
+    "slug": "rule14",
+    "description": "Rule14 is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:29:59.410Z",
+    "updated_at": "2025-11-12T16:29:59.410Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "094d97bd-cf83-419f-bf37-0ad81f0af328",
+  "fields": {
+    "name": "JohnHart Real Estate",
+    "slug": "johnhart-real-estate",
+    "description": "JohnHart Real Estate is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:24.101Z",
+    "updated_at": "2025-11-12T15:59:24.101Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "09aa25d7-9b7d-4671-99f7-1524f20ea11e",
+  "fields": {
+    "name": "Marvin Engineering Comp",
+    "slug": "marvin-engineering-comp",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:33:16.466Z",
+    "updated_at": "2025-10-27T15:33:16.466Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0a86a981-6ddc-485c-afd7-82e2d776c7d1",
+  "fields": {
+    "name": "spectra",
+    "slug": "spectra",
+    "description": "spectra is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:38:18.427Z",
+    "updated_at": "2025-11-12T15:38:18.427Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0aaa8b02-0120-40dd-bea4-8c99b5ccd083",
+  "fields": {
+    "name": "PSEG Long Island",
+    "slug": "pseg-long-island",
+    "description": "PSEG Long Island is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:29:53.033Z",
+    "updated_at": "2025-11-12T16:29:53.034Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0ad300d8-8956-48e7-bfed-3ed8ae9b695f",
+  "fields": {
+    "name": "ARKA Group, L.P.",
+    "slug": "arka-group-lp",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-11T21:43:51.864Z",
+    "updated_at": "2025-11-11T21:43:51.864Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0b61cc78-31b1-4102-b681-16511b1c6f1d",
+  "fields": {
+    "name": "PixelPlex",
+    "slug": "pixelplex",
+    "description": "PixelPlex is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:28.448Z",
+    "updated_at": "2025-11-12T15:59:28.448Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0bb97e7a-eaa3-4f46-ac2b-76b5666d1f13",
+  "fields": {
+    "name": "Fargo VA Medical Center",
+    "slug": "fargo-va-medical-center",
+    "description": "Fargo VA Medical Center",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:56.403Z",
+    "updated_at": "2025-10-27T15:26:56.403Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0c40f4c1-4313-441e-a9c6-bd31117c673f",
+  "fields": {
+    "name": "EY",
+    "slug": "ey",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:34:09.765Z",
+    "updated_at": "2025-10-27T15:34:09.765Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0c5fd551-21f1-42b8-b843-ab74e5a008d3",
+  "fields": {
+    "name": "Shuvel",
+    "slug": "shuvel",
+    "description": "Shuvel is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:00:57.316Z",
+    "updated_at": "2025-11-12T16:00:57.316Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0ca56a30-0854-4ac6-baff-fc01cc3a9bb0",
+  "fields": {
+    "name": "American Express",
+    "slug": "american-express",
+    "description": "American Express is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:00:28.630Z",
+    "updated_at": "2025-11-12T16:00:28.630Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0cfb56e0-c10e-435f-8ca3-8b18e39cc34d",
+  "fields": {
+    "name": "Geological Survey",
+    "slug": "geological-survey",
+    "description": "Geological Survey is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:44:39.013Z",
+    "updated_at": "2025-11-12T15:44:39.013Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0d06290f-2bf4-4181-90d4-a79d8acfbb0f",
+  "fields": {
+    "name": "CMT Services Inc",
+    "slug": "cmt-services-inc",
+    "description": "CMT Services Inc",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:56.403Z",
+    "updated_at": "2025-10-27T15:26:56.403Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0da983e0-db0d-458d-9b37-9a8e6f73dacf",
+  "fields": {
+    "name": "SynergisticIT",
+    "slug": "synergisticit",
+    "description": "SynergisticIT is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T14:56:59.541Z",
+    "updated_at": "2025-10-27T14:56:59.541Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0daab896-4bed-49a4-9fb0-5267c3be958a",
+  "fields": {
+    "name": "Ryan Consulting Group",
+    "slug": "ryan-consulting-group",
+    "description": "Ryan Consulting Group is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:24.039Z",
+    "updated_at": "2025-11-12T15:59:24.039Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0dd8f681-3190-4ef3-91cb-ec0d09ff71c0",
+  "fields": {
+    "name": "Catalyst Labs, LLC",
+    "slug": "catalyst-labs-llc",
+    "description": "Catalyst Labs, LLC is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:05:26.163Z",
+    "updated_at": "2025-11-12T16:05:26.163Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0e5625fe-2fb4-433c-ae73-cf165e8f35c9",
+  "fields": {
+    "name": "WHIZZ",
+    "slug": "whizz",
+    "description": "WHIZZ",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:44.742Z",
+    "updated_at": "2025-10-27T15:26:44.742Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0e58ca46-e619-4923-899a-c91ee39bd0b5",
+  "fields": {
+    "name": "University of Rochester",
+    "slug": "university-of-rochester",
+    "description": "University of Rochester is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:30:29.602Z",
+    "updated_at": "2025-11-12T16:30:29.602Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0ec9d976-cfa3-49ee-b444-ad94c9d5045f",
+  "fields": {
+    "name": "Beyond SOF",
+    "slug": "beyond-sof",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:33:36.460Z",
+    "updated_at": "2025-10-27T15:33:36.460Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0f35fc4a-c7b9-4b75-8ba4-9631b7d0b876",
+  "fields": {
+    "name": "Ascendion",
+    "slug": "ascendion",
+    "description": "Ascendion is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:03:57.811Z",
+    "updated_at": "2025-11-12T16:03:57.811Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "0facb23b-3292-44ab-b6bb-d701d8512f47",
+  "fields": {
+    "name": "Booz Allen Hamilton",
+    "slug": "booz-allen-hamilton",
+    "description": "Booz Allen Hamilton is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T14:56:47.650Z",
+    "updated_at": "2025-10-27T14:56:47.650Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "101994b1-1749-4dca-9a13-5698b8d25525",
+  "fields": {
+    "name": "CBRE",
+    "slug": "cbre",
+    "description": "CBRE",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:01.450Z",
+    "updated_at": "2025-10-27T15:26:01.450Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "10c3c814-1428-4109-b03b-8369814f6cf3",
+  "fields": {
+    "name": "Michaels",
+    "slug": "michaels",
+    "description": "Michaels",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:56.343Z",
+    "updated_at": "2025-10-27T15:26:56.343Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "117deaec-386b-43c9-9473-33f2311f4439",
+  "fields": {
+    "name": "Jobsbridge",
+    "slug": "jobsbridge",
+    "description": "Jobsbridge is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:03:35.934Z",
+    "updated_at": "2025-11-12T16:03:35.934Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "11811edf-f041-4f35-b809-4a126a5789ec",
+  "fields": {
+    "name": "45PRESS, Inc.",
+    "slug": "45press-inc",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:33:32.140Z",
+    "updated_at": "2025-10-27T15:33:32.140Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1190c1a4-0dd6-441c-8f69-7207843abd5a",
+  "fields": {
+    "name": "Sev1tech, Inc.",
+    "slug": "sev1tech-inc",
+    "description": "Sev1tech, Inc. is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:04:02.336Z",
+    "updated_at": "2025-11-12T16:04:02.336Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "11fd1dfd-63d0-4f70-a088-4f3df4cc2d87",
+  "fields": {
+    "name": "MTG Services",
+    "slug": "mtg-services",
+    "description": "MTG Services is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:01:44.016Z",
+    "updated_at": "2025-11-12T16:01:44.016Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "124369f5-9be2-4c0b-a430-a1d55c1ecefd",
+  "fields": {
+    "name": "Barclays",
+    "slug": "barclays",
+    "description": "Barclays is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:03:05.070Z",
+    "updated_at": "2025-11-12T16:03:05.070Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "136a08a7-04e8-4065-b430-f0a8498bcb25",
+  "fields": {
+    "name": "PAR Technology",
+    "slug": "par-technology",
+    "description": "PAR Technology is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:43:42.070Z",
+    "updated_at": "2025-11-12T15:43:42.070Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "139b2f8a-9cd1-433f-a391-c4f5aba5b5ee",
+  "fields": {
+    "name": "Innoflight",
+    "slug": "innoflight",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:33:36.491Z",
+    "updated_at": "2025-10-27T15:33:36.491Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "141843f1-b42e-45ac-b951-3d56fb83eded",
+  "fields": {
+    "name": "Mindful Measures Inc",
+    "slug": "mindful-measures-inc",
+    "description": "Mindful Measures Inc is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:24.060Z",
+    "updated_at": "2025-11-12T15:59:24.060Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "141c0b50-a4b0-45de-be0c-6b3cfefc3766",
+  "fields": {
+    "name": "SLAC National Accelerator Laboratory",
+    "slug": "slac-national-accelerator-laboratory",
+    "description": "SLAC National Accelerator Laboratory is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:35:06.504Z",
+    "updated_at": "2025-11-12T15:35:06.504Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "14b913ea-0a61-4c76-8238-05938835ccff",
+  "fields": {
+    "name": "Zenius Corporation",
+    "slug": "zenius-corporation",
+    "description": "Zenius Corporation is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T14:57:04.234Z",
+    "updated_at": "2025-10-27T14:57:04.234Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "14d6a10c-e903-425d-807d-5cf3168548e7",
+  "fields": {
+    "name": "TAD PGS, Inc.",
+    "slug": "tad-pgs-inc",
+    "description": "TAD PGS, Inc. is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:01.237Z",
+    "updated_at": "2025-11-12T15:59:01.237Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "14fe5ddd-e919-40ac-8eff-64e9ecf5bb05",
+  "fields": {
+    "name": "Alameda Health Consortium/Community Health Center Network",
+    "slug": "alameda-health-consortiumcommunity-health-center-network",
+    "description": "Alameda Health Consortium/Community Health Center Network is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:24.087Z",
+    "updated_at": "2025-11-12T15:59:24.087Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "160eec53-c021-496e-bde8-6fffeb0276c3",
+  "fields": {
+    "name": "Coinbase",
+    "slug": "coinbase",
+    "description": "Coinbase",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:27:04.804Z",
+    "updated_at": "2025-10-27T15:27:04.804Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1644589a-30bf-4c63-8238-45bd441a79ab",
+  "fields": {
+    "name": "Genesis Corp./New Journey AI LLC",
+    "slug": "genesis-corpnew-journey-ai-llc",
+    "description": "Genesis Corp./New Journey AI LLC is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:02:52.069Z",
+    "updated_at": "2025-11-12T16:02:52.069Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1692f461-1969-4f9b-936a-4140870a81ef",
+  "fields": {
+    "name": "Crimson Phoenix LLC ",
+    "slug": "crimson-phoenix-llc",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:33:32.061Z",
+    "updated_at": "2025-10-27T15:33:32.061Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "16ae66bc-d2cf-4e6f-b7ef-f202b536e4a4",
+  "fields": {
+    "name": "Infrastructure Consulting & Engineering",
+    "slug": "infrastructure-consulting-engineering",
+    "description": "Infrastructure Consulting & Engineering is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:00:46.374Z",
+    "updated_at": "2025-11-12T16:00:46.374Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "16b7fedf-3d9d-490e-8f8b-dc36f00f5c54",
+  "fields": {
+    "name": "Systems Engineering Services Corporation",
+    "slug": "systems-engineering-services-corporation",
+    "description": "Systems Engineering Services Corporation is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T14:56:59.568Z",
+    "updated_at": "2025-10-27T14:56:59.568Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "17011e59-69c4-4e25-b39a-cdbd573ef2ad",
+  "fields": {
+    "name": "Archesys Inc",
+    "slug": "archesys-inc",
+    "description": "Archesys Inc is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:01:12.430Z",
+    "updated_at": "2025-11-12T16:01:12.430Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "173eceb7-9523-4195-964c-f059f68f0634",
+  "fields": {
+    "name": "Patterned Learning Career",
+    "slug": "patterned-learning-career",
+    "description": "Patterned Learning Career is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:37:21.980Z",
+    "updated_at": "2025-11-12T15:37:21.980Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1744a2bf-0e88-4367-a000-13140f120f63",
+  "fields": {
+    "name": "Administrative Office of the U.S. Courts",
+    "slug": "administrative-office-of-the-us-courts",
+    "description": "U.S. Federal Government Agency",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:07:11.459Z",
+    "updated_at": "2025-10-24T20:07:11.459Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "17faeaab-11ce-40cf-9877-d09113a316c0",
+  "fields": {
+    "name": "Spotter",
+    "slug": "spotter",
+    "description": "Spotter is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:03:57.837Z",
+    "updated_at": "2025-11-12T16:03:57.837Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "180874ce-d515-48f2-8a34-4efeee79fd4a",
+  "fields": {
+    "name": "United States Army",
+    "slug": "united-states-army",
+    "description": "United States Army",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:27:32.668Z",
+    "updated_at": "2025-10-27T15:27:32.668Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "18d26523-7748-4340-a8c5-0308bc8e5fbc",
+  "fields": {
+    "name": "Lockheed Martin",
+    "slug": "lockheed-martin",
+    "description": "Lockheed Martin is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:06:58.696Z",
+    "updated_at": "2025-10-24T20:06:58.696Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1918e63e-8a62-4f01-b0d8-cf42f98c346c",
+  "fields": {
+    "name": "Oshkosh Corporation",
+    "slug": "oshkosh-corporation",
+    "description": "Oshkosh Corporation is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:43:59.484Z",
+    "updated_at": "2025-11-12T15:43:59.484Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "19b2a073-a5d2-4738-a0f3-4bf39dac7d6a",
+  "fields": {
+    "name": "James Scott Group",
+    "slug": "james-scott-group",
+    "description": "James Scott Group",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:26.881Z",
+    "updated_at": "2025-10-27T15:26:26.881Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "19cb198d-027a-4091-aa72-7cda62fcaffa",
+  "fields": {
+    "name": "One",
+    "slug": "one",
+    "description": "One is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:03:04.996Z",
+    "updated_at": "2025-11-12T16:03:04.996Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1b0dc589-20c3-458f-8ab4-5991e0680285",
+  "fields": {
+    "name": "BAE Systems",
+    "slug": "bae-systems",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:33:36.423Z",
+    "updated_at": "2025-10-27T15:33:36.423Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1b2de496-c77b-4b15-8f4c-dd0601e76de5",
+  "fields": {
+    "name": "Axiom Software Solutions Limited",
+    "slug": "axiom-software-solutions-limited",
+    "description": "Axiom Software Solutions Limited is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:02:14.927Z",
+    "updated_at": "2025-11-12T16:02:14.927Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1b64b3a0-418e-4152-9f08-48fc56b9b5da",
+  "fields": {
+    "name": "AGILANT SOLUTIONS INC.",
+    "slug": "agilant-solutions-inc",
+    "description": "AGILANT SOLUTIONS INC. is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:24.177Z",
+    "updated_at": "2025-11-12T15:59:24.177Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1b7d20e3-2bf2-4b71-bdf4-6710cb9a897f",
+  "fields": {
+    "name": "Georgia IT Inc",
+    "slug": "georgia-it-inc",
+    "description": "Georgia IT Inc is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:37:26.610Z",
+    "updated_at": "2025-11-12T15:37:26.610Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1ca868aa-c6c4-4a89-b003-a5125be31e2f",
+  "fields": {
+    "name": "Raytheon",
+    "slug": "raytheon",
+    "description": "Raytheon - Veteran-friendly employer",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:27:32.652Z",
+    "updated_at": "2025-10-27T15:27:32.652Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1cf58fdc-9d71-4025-af25-9319848cdb19",
+  "fields": {
+    "name": "ManpowerGroup",
+    "slug": "manpowergroup",
+    "description": "ManpowerGroup is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:07:04.863Z",
+    "updated_at": "2025-10-24T20:07:04.863Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1d79ed56-48f3-4b1e-b09e-d4bebe31dd0c",
+  "fields": {
+    "name": "ClearanceJobs",
+    "slug": "clearancejobs",
+    "description": "ClearanceJobs",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:22.162Z",
+    "updated_at": "2025-10-27T15:26:22.162Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1d96d342-a134-4bd5-babb-b4943e6d336a",
+  "fields": {
+    "name": "Foursquare",
+    "slug": "foursquare",
+    "description": "Foursquare is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:30:29.419Z",
+    "updated_at": "2025-11-12T16:30:29.419Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1e4867d1-ed0a-49e3-afe3-4702727d4771",
+  "fields": {
+    "name": "Vivid Mortgages Inc",
+    "slug": "vivid-mortgages-inc",
+    "description": "Vivid Mortgages Inc is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:24.049Z",
+    "updated_at": "2025-11-12T15:59:24.049Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "1ecebfc5-1b66-48c4-ab12-955f9ccf71e0",
+  "fields": {
+    "name": "AND Digital",
+    "slug": "and-digital",
+    "description": "AND Digital is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:00:46.421Z",
+    "updated_at": "2025-11-12T16:00:46.421Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "20404f2a-9379-4be9-b557-2cc6e8cb9139",
+  "fields": {
+    "name": "Slalom",
+    "slug": "slalom",
+    "description": "Slalom is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:01:23.194Z",
+    "updated_at": "2025-11-12T16:01:23.194Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "20af6991-1820-406d-bee3-89b4824aa082",
+  "fields": {
+    "name": "Microsoft",
+    "slug": "microsoft",
+    "description": "Microsoft",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:27:13.021Z",
+    "updated_at": "2025-10-27T15:27:13.021Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "20eedf40-b4e6-46da-b0ed-5d77465b818f",
+  "fields": {
+    "name": "Uline, Inc.",
+    "slug": "uline-inc",
+    "description": "Uline, Inc. is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:31:13.338Z",
+    "updated_at": "2025-11-12T15:31:13.338Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "215b6c7d-3ca1-43d2-b43c-1f0e55e73508",
+  "fields": {
+    "name": "Bellabay Realty",
+    "slug": "bellabay-realty",
+    "description": "Bellabay Realty",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:15.369Z",
+    "updated_at": "2025-10-27T15:26:15.369Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "215cb4ce-7f39-4a01-aebe-9289f901c958",
+  "fields": {
+    "name": "BinaryBees Business Solutions LLC",
+    "slug": "binarybees-business-solutions-llc",
+    "description": "BinaryBees Business Solutions LLC is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:37:16.639Z",
+    "updated_at": "2025-11-12T15:37:16.639Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2166d73b-30c9-4ee4-a3ea-af5eddd18464",
+  "fields": {
+    "name": "Verus LLC",
+    "slug": "verus-llc",
+    "description": "Verus LLC is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:24.149Z",
+    "updated_at": "2025-11-12T15:59:24.149Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "217e7f58-b108-4738-855f-619735cdc5bf",
+  "fields": {
+    "name": "Clearwater Systems Inc.",
+    "slug": "clearwater-systems-inc",
+    "description": "Clearwater Systems Inc. is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:37:26.616Z",
+    "updated_at": "2025-11-12T15:37:26.616Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2190e634-ab4e-4804-b741-7bd4ae0eb5e2",
+  "fields": {
+    "name": "Industrial Security Integrators, LLC",
+    "slug": "industrial-security-integrators-llc",
+    "description": "Industrial Security Integrators, LLC",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:22.168Z",
+    "updated_at": "2025-10-27T15:26:22.168Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "22329d29-54fc-4b74-a947-7eaccc5e872e",
+  "fields": {
+    "name": "General Dynamics",
+    "slug": "general-dynamics",
+    "description": "General Dynamics - Veteran-friendly employer",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:27:21.918Z",
+    "updated_at": "2025-10-27T15:27:21.918Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "225b3227-a6dc-481c-8ea7-8c99ded62377",
+  "fields": {
+    "name": "Albertsons Companies",
+    "slug": "albertsons-companies",
+    "description": "Albertsons Companies",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:56.355Z",
+    "updated_at": "2025-10-27T15:26:56.355Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2263fa2a-380d-4ad0-a90d-3f8915152604",
+  "fields": {
+    "name": "BGC Partners",
+    "slug": "bgc-partners",
+    "description": "BGC Partners is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:37:02.606Z",
+    "updated_at": "2025-11-12T15:37:02.606Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "229d6ff7-6f8c-4b65-bf6e-2ff474056d30",
+  "fields": {
+    "name": "Halo Group",
+    "slug": "halo-group",
+    "description": "Halo Group is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:03:09.296Z",
+    "updated_at": "2025-11-12T16:03:09.296Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "22d3daf1-4ff8-4113-9af2-ce42f1a0ff97",
+  "fields": {
+    "name": "Americold",
+    "slug": "americold",
+    "description": "Americold is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:01:17.088Z",
+    "updated_at": "2025-11-12T16:01:17.088Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "23612d3e-9762-43f7-a51f-c2cd2469a876",
+  "fields": {
+    "name": "Swayable",
+    "slug": "swayable",
+    "description": "Swayable is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T14:56:59.556Z",
+    "updated_at": "2025-10-27T14:56:59.556Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2365a191-3dca-4cba-92aa-6e7ad92f111c",
+  "fields": {
+    "name": "Tlingit Haida Tribal Business Corporation",
+    "slug": "tlingit-haida-tribal-business-corporation",
+    "description": "Tlingit Haida Tribal Business Corporation",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:27:21.955Z",
+    "updated_at": "2025-10-27T15:27:21.955Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "23e127bf-3222-4de8-a542-6fa51297e8af",
+  "fields": {
+    "name": "Defense Finance and Accounting Service",
+    "slug": "defense-finance-and-accounting-service",
+    "description": "U.S. Federal Government Agency",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:07:11.471Z",
+    "updated_at": "2025-10-24T20:07:11.471Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "248251be-e1a6-4faf-b7ae-e905baabd2a9",
+  "fields": {
+    "name": "BottleUp",
+    "slug": "bottleup",
+    "description": "BottleUp is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:03:31.318Z",
+    "updated_at": "2025-11-12T16:03:31.318Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "24a318e9-1459-4944-a08a-c47a7d156f00",
+  "fields": {
+    "name": "Figma",
+    "slug": "figma",
+    "description": "Figma is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:44.277Z",
+    "updated_at": "2025-11-12T15:59:44.277Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "24e6c07e-6aa8-4365-b698-573126c756dc",
+  "fields": {
+    "name": "eTek IT Services",
+    "slug": "etek-it-services",
+    "description": "eTek IT Services is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:02:01.270Z",
+    "updated_at": "2025-11-12T16:02:01.270Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "259e25fe-2c89-4182-aade-6ba94b99279a",
+  "fields": {
+    "name": "Southern California Edison",
+    "slug": "southern-california-edison",
+    "description": "Southern California Edison is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:53.244Z",
+    "updated_at": "2025-11-12T15:59:53.244Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "25a4aa5c-3e52-4791-bbd1-45a307c5c7da",
+  "fields": {
+    "name": "Akima, LLC",
+    "slug": "akima-llc",
+    "description": "Akima, LLC",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:27:21.939Z",
+    "updated_at": "2025-10-27T15:27:21.939Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "25abfa99-4bb3-4227-a6fb-0067c38518a0",
+  "fields": {
+    "name": "Robotics Technologies",
+    "slug": "robotics-technologies",
+    "description": "Robotics Technologies is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:04:07.299Z",
+    "updated_at": "2025-11-12T16:04:07.299Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "26ad0104-c667-4618-9896-f6db5a01068a",
+  "fields": {
+    "name": "Crypto.com",
+    "slug": "cryptocom",
+    "description": "Crypto.com is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:45:29.364Z",
+    "updated_at": "2025-11-12T15:45:29.364Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2743774e-5f62-4eb6-aaa3-d5051e64d205",
+  "fields": {
+    "name": "Yellow Duck Technologies",
+    "slug": "yellow-duck-technologies",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:33:12.132Z",
+    "updated_at": "2025-10-27T15:33:12.132Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "27f19597-e048-4567-a99d-d4da2c72eaf1",
+  "fields": {
+    "name": "St. George Tanaq Corporation",
+    "slug": "st-george-tanaq-corporation",
+    "description": "St. George Tanaq Corporation is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:36:56.978Z",
+    "updated_at": "2025-11-12T15:36:56.978Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "28183290-4fe9-42fc-a564-8f8ef518d019",
+  "fields": {
+    "name": "PepsiCo",
+    "slug": "pepsico",
+    "description": "PepsiCo is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:00:46.343Z",
+    "updated_at": "2025-11-12T16:00:46.343Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "282793a7-c1cd-4844-b897-1b8bb5f51170",
+  "fields": {
+    "name": "CDS Visual",
+    "slug": "cds-visual",
+    "description": "CDS Visual is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:58:56.815Z",
+    "updated_at": "2025-11-12T15:58:56.815Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "295739c0-922a-4fa8-8fea-697c399b7e0c",
+  "fields": {
+    "name": "Ford Motor Company",
+    "slug": "ford-motor-company",
+    "description": "Ford Motor Company is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:30:29.453Z",
+    "updated_at": "2025-11-12T16:30:29.453Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2a75e2e0-ac14-4a0b-bed5-56ce8deace6b",
+  "fields": {
+    "name": "TLA-LLC",
+    "slug": "tla-llc",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-11T21:43:35.590Z",
+    "updated_at": "2025-11-11T21:43:35.590Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2af867c7-7537-4300-af02-e86bbc122410",
+  "fields": {
+    "name": "Fabec IT",
+    "slug": "fabec-it",
+    "description": "Fabec IT is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:04:54.551Z",
+    "updated_at": "2025-11-12T16:04:54.551Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2b2e7718-d767-40e7-aa7a-cd65b2db458f",
+  "fields": {
+    "name": "London Stock Exchange Group",
+    "slug": "london-stock-exchange-group",
+    "description": "London Stock Exchange Group is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:02:14.944Z",
+    "updated_at": "2025-11-12T16:02:14.944Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2b3c00a5-1a5d-46f9-ac44-d80e2a31efef",
+  "fields": {
+    "name": "Air Force Elements, U.S. Transportation Command",
+    "slug": "air-force-elements-us-transportation-command",
+    "description": "U.S. Federal Government Agency",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:07:12.930Z",
+    "updated_at": "2025-10-24T20:07:12.930Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2b82d665-45b9-4bba-92e6-b610fb0624a7",
+  "fields": {
+    "name": "King County",
+    "slug": "king-county",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-11T21:44:29.470Z",
+    "updated_at": "2025-11-11T21:44:29.470Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2bb61775-9210-4b9e-aa00-ebfab6cd5e00",
+  "fields": {
+    "name": "Nexeo Staffing",
+    "slug": "nexeo-staffing",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-11T21:43:53.543Z",
+    "updated_at": "2025-11-11T21:43:53.543Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2c210109-dbdb-4a32-a314-718e2716abcc",
+  "fields": {
+    "name": "Vantor",
+    "slug": "vantor",
+    "description": "Vantor is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:06:58.744Z",
+    "updated_at": "2025-10-24T20:06:58.744Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2c4f5d1a-110e-4b94-896b-85f4941fb5b6",
+  "fields": {
+    "name": "Diverse Lynx",
+    "slug": "diverse-lynx",
+    "description": "Diverse Lynx is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:46:06.319Z",
+    "updated_at": "2025-11-12T15:46:06.319Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2c78c471-1d0f-4880-a2d3-9b67b8e02ae8",
+  "fields": {
+    "name": "Patriot Machine",
+    "slug": "patriot-machine",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:33:16.455Z",
+    "updated_at": "2025-10-27T15:33:16.455Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2d4705d5-5524-4b6a-a971-8123943727da",
+  "fields": {
+    "name": "Jobot",
+    "slug": "jobot",
+    "description": "Jobot is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T14:56:59.525Z",
+    "updated_at": "2025-10-27T14:56:59.525Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2d713cc6-5751-4623-ad68-5e5b5155de19",
+  "fields": {
+    "name": "KYYBA",
+    "slug": "kyyba",
+    "description": "KYYBA is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:29:59.482Z",
+    "updated_at": "2025-11-12T16:29:59.482Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2d95b73b-f820-43ce-ae41-1e891ecf7f44",
+  "fields": {
+    "name": "SWITS DIGITAL Private Limited",
+    "slug": "swits-digital-private-limited",
+    "description": "SWITS DIGITAL Private Limited is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:01:30.748Z",
+    "updated_at": "2025-11-12T16:01:30.748Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2dcff22d-303b-4e99-bc68-d90840ade398",
+  "fields": {
+    "name": "Apex Systems",
+    "slug": "apex-systems",
+    "description": "Apex Systems is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:03:05.023Z",
+    "updated_at": "2025-11-12T16:03:05.023Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2de17837-2832-47af-847b-1cd28a6a1532",
+  "fields": {
+    "name": "Layline Automation",
+    "slug": "layline-automation",
+    "description": "Layline Automation is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:24.336Z",
+    "updated_at": "2025-11-12T15:59:24.336Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2df4661b-b0a4-4ab2-8a31-3641f46938e6",
+  "fields": {
+    "name": "Anduril Industries",
+    "slug": "anduril-industries",
+    "description": "Anduril Industries is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:04:33.438Z",
+    "updated_at": "2025-11-12T16:04:33.438Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2ecc3ff0-f0b2-49de-97dd-727509750c61",
+  "fields": {
+    "name": "ESRhealthcare",
+    "slug": "esrhealthcare",
+    "description": "ESRhealthcare is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:38:26.130Z",
+    "updated_at": "2025-11-12T15:38:26.130Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2f1e7ed5-350d-425c-8447-db8231cdecfc",
+  "fields": {
+    "name": "United Wholesale Mortgage",
+    "slug": "united-wholesale-mortgage",
+    "description": "United Wholesale Mortgage is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:39.965Z",
+    "updated_at": "2025-11-12T15:59:39.965Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2fb87907-3ae0-45fc-8b62-171b44797707",
+  "fields": {
+    "name": "Labcorp",
+    "slug": "labcorp",
+    "description": "Labcorp is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:35:06.539Z",
+    "updated_at": "2025-11-12T15:35:06.539Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2fc0e296-095d-4fb1-9b7b-d079b464a4b0",
+  "fields": {
+    "name": "Northrop Grumman",
+    "slug": "northrop-grumman",
+    "description": "Northrop Grumman - Veteran-friendly employer",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:04.236Z",
+    "updated_at": "2025-10-27T15:26:04.236Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "2fe15f39-b13e-422f-a5a9-bf53f95addab",
+  "fields": {
+    "name": "Tenica and Associates LLC",
+    "slug": "tenica-and-associates-llc",
+    "description": "Tenica and Associates LLC",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:40.302Z",
+    "updated_at": "2025-10-27T15:26:40.302Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "30f14ec2-2a81-44c9-9bcb-7a42f720b704",
+  "fields": {
+    "name": "Quality Technology Services",
+    "slug": "quality-technology-services",
+    "description": "Quality Technology Services",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:08.684Z",
+    "updated_at": "2025-10-27T15:26:08.684Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "311f45ef-3a1c-476b-b4ca-4cd81eb5f295",
+  "fields": {
+    "name": "Djangojobs",
+    "slug": "djangojobs",
+    "description": "Djangojobs is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T14:56:55.338Z",
+    "updated_at": "2025-10-27T14:56:55.338Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "31266c88-e1da-4ba6-86c0-ebc1b357a84c",
+  "fields": {
+    "name": "US HealthCenter",
+    "slug": "us-healthcenter",
+    "description": "US HealthCenter is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:43:42.045Z",
+    "updated_at": "2025-11-12T15:43:42.045Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "32176c11-8d20-40a1-98fb-48665488b527",
+  "fields": {
+    "name": "GXO Logistics",
+    "slug": "gxo-logistics",
+    "description": "GXO Logistics",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:44.761Z",
+    "updated_at": "2025-10-27T15:26:44.761Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "33071ddb-0899-45d9-acd1-3d4df8f2dc04",
+  "fields": {
+    "name": "ABM Industries",
+    "slug": "abm-industries",
+    "description": "ABM Industries",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:36.023Z",
+    "updated_at": "2025-10-27T15:26:36.023Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3348b9a2-8b5d-453b-a043-40040d907796",
+  "fields": {
+    "name": "JPMorganChase",
+    "slug": "jpmorganchase",
+    "description": "JPMorganChase is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:38:50.394Z",
+    "updated_at": "2025-11-12T15:38:50.394Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "34331d87-6deb-4d35-b38d-2acbe8fd4fa4",
+  "fields": {
+    "name": "Nightwing",
+    "slug": "nightwing",
+    "description": "Nightwing is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:31:18.707Z",
+    "updated_at": "2025-11-12T15:31:18.707Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3663bd07-ca73-4a00-b387-863c1f67275b",
+  "fields": {
+    "name": "US Customs and Border Protection",
+    "slug": "us-customs-and-border-protection",
+    "description": "US Customs and Border Protection",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:01.430Z",
+    "updated_at": "2025-10-27T15:26:01.430Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "37282d78-affa-41c4-a910-d512877bddeb",
+  "fields": {
+    "name": "Professional Diversity Network",
+    "slug": "professional-diversity-network",
+    "description": "Professional Diversity Network",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:56.416Z",
+    "updated_at": "2025-10-27T15:26:56.416Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "377506f6-b2ee-4b07-8d84-45d9d19dd3d3",
+  "fields": {
+    "name": "INCA Engineering",
+    "slug": "inca-engineering",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:33:24.115Z",
+    "updated_at": "2025-10-27T15:33:24.115Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "379270f5-f95d-4f96-ad63-4851ee0bf6ab",
+  "fields": {
+    "name": "Home Depot",
+    "slug": "home-depot",
+    "description": "Home Depot is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:05:26.276Z",
+    "updated_at": "2025-11-12T16:05:26.276Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "37f30850-7629-473b-bbef-856f2f1d20a5",
+  "fields": {
+    "name": "CEdge Software Consultants",
+    "slug": "cedge-software-consultants",
+    "description": "CEdge Software Consultants is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:01:12.391Z",
+    "updated_at": "2025-11-12T16:01:12.391Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "38196e70-126b-44a0-a56d-dc264c93fb3b",
+  "fields": {
+    "name": "ANISTAR Technologies",
+    "slug": "anistar-technologies",
+    "description": "ANISTAR Technologies",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:22.148Z",
+    "updated_at": "2025-10-27T15:26:22.148Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "386407ec-c95e-438c-80a0-4806c9988789",
+  "fields": {
+    "name": "Army National Guard Units",
+    "slug": "army-national-guard-units",
+    "description": "U.S. Federal Government Agency",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:07:11.516Z",
+    "updated_at": "2025-10-24T20:07:11.516Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "38ce6e20-8e54-41ed-bb77-383da341ec43",
+  "fields": {
+    "name": "Blue Star Partners LLC",
+    "slug": "blue-star-partners-llc",
+    "description": "Blue Star Partners LLC is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:31:13.435Z",
+    "updated_at": "2025-11-12T15:31:13.435Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "38d3ac50-b312-43e9-abdc-a755fef59a19",
+  "fields": {
+    "name": "Chase- Candidate Experience page",
+    "slug": "chase-candidate-experience-page",
+    "description": "Chase- Candidate Experience page is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:02:14.966Z",
+    "updated_at": "2025-11-12T16:02:14.966Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "38de49c4-be9d-43b5-85ee-882bf49ccbbf",
+  "fields": {
+    "name": "Dun & Bradstreet",
+    "slug": "dun-bradstreet",
+    "description": "Dun & Bradstreet is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:05:26.179Z",
+    "updated_at": "2025-11-12T16:05:26.179Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "38e6e501-75e7-466c-9dae-422b8638e168",
+  "fields": {
+    "name": "NiSource Careers",
+    "slug": "nisource-careers",
+    "description": "NiSource Careers is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:01:06.022Z",
+    "updated_at": "2025-11-12T16:01:06.022Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "39a10d98-4719-4697-b511-2e8a6775a4b5",
+  "fields": {
+    "name": "Vianai",
+    "slug": "vianai",
+    "description": "Vianai is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:33.128Z",
+    "updated_at": "2025-11-12T15:59:33.128Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "39b4265a-4497-4236-9caf-a6d67888d983",
+  "fields": {
+    "name": "KC Career Makers",
+    "slug": "kc-career-makers",
+    "description": "KC Career Makers is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:04:07.095Z",
+    "updated_at": "2025-11-12T16:04:07.095Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3aec157a-d438-4387-b363-2ad4f3a30104",
+  "fields": {
+    "name": "System Studies & Simulation",
+    "slug": "system-studies-simulation",
+    "description": "System Studies & Simulation",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:27:21.983Z",
+    "updated_at": "2025-10-27T15:27:21.983Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3af8eca7-487c-4e00-9278-a1105ae78ff1",
+  "fields": {
+    "name": "Matlen Silver",
+    "slug": "matlen-silver",
+    "description": "Matlen Silver is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:37:21.924Z",
+    "updated_at": "2025-11-12T15:37:21.924Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3b687478-b822-49cb-a39b-941f65d5ad12",
+  "fields": {
+    "name": "NT Concepts",
+    "slug": "nt-concepts",
+    "description": "NT Concepts is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T14:57:09.969Z",
+    "updated_at": "2025-10-27T14:57:09.969Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3b782d43-0777-4cbf-9bea-5516f167b9ea",
+  "fields": {
+    "name": "ASRC Federal Holding Company",
+    "slug": "asrc-federal-holding-company",
+    "description": "ASRC Federal Holding Company is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:35:03.006Z",
+    "updated_at": "2025-11-12T15:35:03.006Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3c402ab6-35f5-431a-8c71-7c9f711ab013",
+  "fields": {
+    "name": "PlanIT Group, LLC",
+    "slug": "planit-group-llc",
+    "description": "PlanIT Group, LLC is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T14:57:09.918Z",
+    "updated_at": "2025-10-27T14:57:09.918Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3c76ffef-40de-4efb-9a21-833fee62981a",
+  "fields": {
+    "name": "Air National Guard Units",
+    "slug": "air-national-guard-units",
+    "description": "U.S. Federal Government Agency",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:07:11.499Z",
+    "updated_at": "2025-10-24T20:07:11.499Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3cc62b22-78e0-4128-893d-5574f2084083",
+  "fields": {
+    "name": "North Point Technology",
+    "slug": "north-point-technology",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:33:32.077Z",
+    "updated_at": "2025-10-27T15:33:32.077Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3d4d526c-8a50-4104-8b09-f8447f638a0e",
+  "fields": {
+    "name": "Lumen",
+    "slug": "lumen",
+    "description": "Lumen is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:44:13.599Z",
+    "updated_at": "2025-11-12T15:44:13.599Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3d6a8469-5b6f-4b3f-92be-232c37dbd436",
+  "fields": {
+    "name": "Sam's Club",
+    "slug": "sams-club",
+    "description": "Sam's Club is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:00:46.392Z",
+    "updated_at": "2025-11-12T16:00:46.392Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3d7a218f-a712-4a15-9233-d78a89fb5df5",
+  "fields": {
+    "name": "Federal Communications Commission",
+    "slug": "federal-communications-commission",
+    "description": "Federal Communications Commission is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:44:33.748Z",
+    "updated_at": "2025-11-12T15:44:33.748Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3db23c68-3789-4938-8964-9eb5e28d5c72",
+  "fields": {
+    "name": "Sonsoft Inc",
+    "slug": "sonsoft-inc",
+    "description": "Sonsoft Inc is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:38:18.460Z",
+    "updated_at": "2025-11-12T15:38:18.460Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3db7da3b-2fad-45f9-832e-35bb80754ced",
+  "fields": {
+    "name": "Suncap Technology, Inc.",
+    "slug": "suncap-technology-inc",
+    "description": "Suncap Technology, Inc. is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:37:32.078Z",
+    "updated_at": "2025-11-12T15:37:32.078Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3dcdae5f-59e3-4f8a-8ed7-5749cfba3a28",
+  "fields": {
+    "name": "Eiden Systems Consulting",
+    "slug": "eiden-systems-consulting",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-11T21:43:46.791Z",
+    "updated_at": "2025-11-11T21:43:46.791Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3e1db6d4-effe-482f-9a4c-96a042fdad62",
+  "fields": {
+    "name": "D&H",
+    "slug": "dh",
+    "description": "D&H is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:10.339Z",
+    "updated_at": "2025-11-12T15:59:10.339Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3e56bed4-02f3-4661-b096-0a354f17854e",
+  "fields": {
+    "name": "PDS Tech Commercial, Inc.",
+    "slug": "pds-tech-commercial-inc",
+    "description": "PDS Tech Commercial, Inc. is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:19.710Z",
+    "updated_at": "2025-11-12T15:59:19.710Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3e94425b-2c16-4235-b1a5-68faf3b7f1bf",
+  "fields": {
+    "name": "OPT Nation",
+    "slug": "opt-nation",
+    "description": "OPT Nation is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T14:57:04.271Z",
+    "updated_at": "2025-10-27T14:57:04.271Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3e9bba12-89f8-4028-ab26-528f1b62ab4d",
+  "fields": {
+    "name": "SimVentions, Inc",
+    "slug": "simventions-inc",
+    "description": "SimVentions, Inc is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:06:58.784Z",
+    "updated_at": "2025-10-24T20:06:58.784Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3ea2902a-6a54-41ff-a091-17a7c649487d",
+  "fields": {
+    "name": "Fiserv",
+    "slug": "fiserv",
+    "description": "Fiserv is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:35:06.513Z",
+    "updated_at": "2025-11-12T15:35:06.513Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3f16c3aa-1aaa-40b8-b78d-e2bbb13926c8",
+  "fields": {
+    "name": "Serco North America",
+    "slug": "serco-north-america",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:34:09.765Z",
+    "updated_at": "2025-10-27T15:34:09.765Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3f9d6cf6-7107-4edc-9f4c-89fb92196491",
+  "fields": {
+    "name": "Sunrise Senior Living",
+    "slug": "sunrise-senior-living",
+    "description": "Sunrise Senior Living",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:27:04.769Z",
+    "updated_at": "2025-10-27T15:27:04.769Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3fa457a3-f940-4344-8b7d-2e3a6e33863b",
+  "fields": {
+    "name": "Actalent",
+    "slug": "actalent",
+    "description": "Actalent is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:07:07.073Z",
+    "updated_at": "2025-10-24T20:07:07.073Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "3fe15a4d-9fdd-4eda-ae23-840d31d84766",
+  "fields": {
+    "name": "SD Department of Veterans Affairs",
+    "slug": "sd-department-of-veterans-affairs",
+    "description": "SD Department of Veterans Affairs",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:56.371Z",
+    "updated_at": "2025-10-27T15:26:56.371Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "40784e4d-9254-411f-bcd1-d07bf3d95056",
+  "fields": {
+    "name": "OpenAI",
+    "slug": "openai",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-11T21:44:04.120Z",
+    "updated_at": "2025-11-11T21:44:04.120Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "40acdd9e-fd07-40f5-a33c-3b3818b72388",
+  "fields": {
+    "name": "PortPro",
+    "slug": "portpro",
+    "description": "PortPro is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:44.117Z",
+    "updated_at": "2025-11-12T15:59:44.117Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "40bd934e-9ee2-4e75-9751-62d1806127ce",
+  "fields": {
+    "name": "Textron",
+    "slug": "textron",
+    "description": "Textron",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:44.725Z",
+    "updated_at": "2025-10-27T15:26:44.725Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "410560b8-b2a4-4c39-8c2e-4e94f0fd935f",
+  "fields": {
+    "name": "Gromelski and Associates, Inc.",
+    "slug": "gromelski-and-associates-inc",
+    "description": "Gromelski and Associates, Inc. is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:31:13.528Z",
+    "updated_at": "2025-11-12T15:31:13.528Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "41c8bd8a-b9ef-43f9-b3f2-9991d40b890a",
+  "fields": {
+    "name": "USAA",
+    "slug": "usaa",
+    "description": "USAA",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:01.430Z",
+    "updated_at": "2025-10-27T15:26:01.430Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "42496473-297a-4259-a300-23d24ae6a004",
+  "fields": {
+    "name": "VSolvit LLC",
+    "slug": "vsolvit-llc",
+    "description": "VSolvit LLC is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:43:41.824Z",
+    "updated_at": "2025-11-12T15:43:41.824Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "425fa797-6647-4737-8dce-7b3f68a3341c",
+  "fields": {
+    "name": "Constellation Technologies, Inc",
+    "slug": "constellation-technologies-inc",
+    "description": "Constellation Technologies, Inc is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:37:48.281Z",
+    "updated_at": "2025-11-12T15:37:48.281Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "42ba14b8-50b9-47c1-89a8-988290bb558b",
+  "fields": {
+    "name": "Alvarez & Marsal",
+    "slug": "alvarez-marsal",
+    "description": "Alvarez & Marsal",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:27:21.914Z",
+    "updated_at": "2025-10-27T15:27:21.914Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "42ef25dc-c2a7-4142-91d9-b8b924162b93",
+  "fields": {
+    "name": "AUSGAR Technologies Inc.",
+    "slug": "ausgar-technologies-inc",
+    "description": "AUSGAR Technologies Inc.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:26.916Z",
+    "updated_at": "2025-10-27T15:26:26.916Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "43094d5a-7333-4079-b590-8804e0fc4d24",
+  "fields": {
+    "name": "Cassia",
+    "slug": "cassia",
+    "description": "Cassia",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:49.319Z",
+    "updated_at": "2025-10-27T15:26:49.319Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "43343a17-ce17-47bc-abaf-770b8b6aa8d1",
+  "fields": {
+    "name": "Western Mutual Insurance Group",
+    "slug": "western-mutual-insurance-group",
+    "description": "Western Mutual Insurance Group is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:06:58.970Z",
+    "updated_at": "2025-10-24T20:06:58.970Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "4369ffc3-d4de-47a2-b476-681b21bbe457",
+  "fields": {
+    "name": "Goldman Sachs, Inc.",
+    "slug": "goldman-sachs-inc",
+    "description": "Goldman Sachs, Inc. is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:03:57.871Z",
+    "updated_at": "2025-11-12T16:03:57.871Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "44353c05-a878-4254-a43b-9ec17eb6cc9e",
+  "fields": {
+    "name": "Fidelity Investments",
+    "slug": "fidelity-investments",
+    "description": "Fidelity Investments is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:37:21.942Z",
+    "updated_at": "2025-11-12T15:37:21.942Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "4438b60d-e36f-496a-b374-f9465666ab2b",
+  "fields": {
+    "name": "PNC",
+    "slug": "pnc",
+    "description": "PNC is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:00:28.593Z",
+    "updated_at": "2025-11-12T16:00:28.593Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "443c7158-8afc-4e1b-960c-bb02c86fcb54",
+  "fields": {
+    "name": "Lion Federal",
+    "slug": "lion-federal",
+    "description": "Lion Federal is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T14:56:55.341Z",
+    "updated_at": "2025-10-27T14:56:55.341Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "446c9276-c1c1-40b9-b908-ed70cf8bc1cd",
+  "fields": {
+    "name": "Toyon Research Corporation",
+    "slug": "toyon-research-corporation",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-11T21:43:38.841Z",
+    "updated_at": "2025-11-11T21:43:38.841Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "44a79865-4773-4821-a8f6-0c173210d746",
+  "fields": {
+    "name": "Kentro",
+    "slug": "kentro",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-11T21:43:35.589Z",
+    "updated_at": "2025-11-11T21:43:35.589Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "44bfeac5-0b9a-4ead-940f-4f2d3ad284c0",
+  "fields": {
+    "name": "Vituity",
+    "slug": "vituity",
+    "description": "Vituity",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:31.445Z",
+    "updated_at": "2025-10-27T15:26:31.445Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "44d57476-de2b-46cd-9742-05d0726ab763",
+  "fields": {
+    "name": "CACI",
+    "slug": "caci",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:33:12.108Z",
+    "updated_at": "2025-10-27T15:33:12.108Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "451e9e8b-01dc-4c27-bbda-331c9e526ba0",
+  "fields": {
+    "name": "Chewy",
+    "slug": "chewy",
+    "description": "Chewy",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:26:08.693Z",
+    "updated_at": "2025-10-27T15:26:08.693Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "46bdf644-9067-430b-ac08-a1891402b5fb",
+  "fields": {
+    "name": "Weiss Asset Management",
+    "slug": "weiss-asset-management",
+    "description": "Weiss Asset Management is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:37:16.647Z",
+    "updated_at": "2025-11-12T15:37:16.647Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "46d0ee0b-186b-46e9-a86f-ee1d573ad673",
+  "fields": {
+    "name": "Year Up United",
+    "slug": "year-up-united",
+    "description": "Year Up United is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:06:58.817Z",
+    "updated_at": "2025-10-24T20:06:58.817Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "46d564da-be3d-4c63-98cc-c8c1703e1521",
+  "fields": {
+    "name": "Marriott",
+    "slug": "marriott",
+    "description": "Marriott",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:27:04.711Z",
+    "updated_at": "2025-10-27T15:27:04.711Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "471078d8-166b-40b4-9f13-bf68b15a977b",
+  "fields": {
+    "name": "Defense Contract Management Agency",
+    "slug": "defense-contract-management-agency",
+    "description": "Defense Contract Management Agency",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:27:21.903Z",
+    "updated_at": "2025-10-27T15:27:21.903Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "47563a2a-14b9-4a55-9d8e-74c5456f3d12",
+  "fields": {
+    "name": "Arka",
+    "slug": "arka",
+    "description": "Arka is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:37:37.689Z",
+    "updated_at": "2025-11-12T15:37:37.689Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "47a4b368-7622-426f-9be9-fa9bb258e800",
+  "fields": {
+    "name": "University Hospitals",
+    "slug": "university-hospitals",
+    "description": "University Hospitals is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:37:26.580Z",
+    "updated_at": "2025-11-12T15:37:26.580Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "47eabed9-6282-482b-8a66-c114618c193f",
+  "fields": {
+    "name": "CC Pace Systems",
+    "slug": "cc-pace-systems",
+    "description": "CC Pace Systems is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:00:46.303Z",
+    "updated_at": "2025-11-12T16:00:46.303Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "4817be93-39a0-45d2-b96f-9e596bec2c10",
+  "fields": {
+    "name": "The Cigna Group",
+    "slug": "the-cigna-group",
+    "description": "The Cigna Group is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:30:46.392Z",
+    "updated_at": "2025-11-12T16:30:46.392Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "48b34c80-05b9-4973-8b9b-56ba2f34c475",
+  "fields": {
+    "name": "Visionary Innovative Technology Solutions LLC",
+    "slug": "visionary-innovative-technology-solutions-llc",
+    "description": "Visionary Innovative Technology Solutions LLC is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:03:05.011Z",
+    "updated_at": "2025-11-12T16:03:05.011Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "48fe000c-cd06-4a1f-9762-5f99a0490ade",
+  "fields": {
+    "name": "CommIT Enterprises, Inc.",
+    "slug": "commit-enterprises-inc",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-11T21:43:49.292Z",
+    "updated_at": "2025-11-11T21:43:49.292Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "495e9be9-7fbe-490f-b7c1-8b5ea8b6c947",
+  "fields": {
+    "name": "Tentek, Inc.",
+    "slug": "tentek-inc",
+    "description": "Tentek, Inc. is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:24.359Z",
+    "updated_at": "2025-11-12T15:59:24.359Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "4975def0-2d4d-4008-8cb6-417654ebb326",
+  "fields": {
+    "name": "Amazon",
+    "slug": "amazon",
+    "description": "Amazon",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T15:27:04.736Z",
+    "updated_at": "2025-10-27T15:27:04.736Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "499b992e-3c97-4d08-a625-dcb41dab62b9",
+  "fields": {
+    "name": "Cox Automotive",
+    "slug": "cox-automotive",
+    "description": "Cox Automotive is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:58:56.902Z",
+    "updated_at": "2025-11-12T15:58:56.902Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "49e7f9a6-b2bf-4883-858c-81c1424a3297",
+  "fields": {
+    "name": "Two Six Technologies",
+    "slug": "two-six-technologies",
+    "description": "",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-11T21:43:46.803Z",
+    "updated_at": "2025-11-11T21:43:46.803Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "4a8b2096-bef9-4f64-8e12-22855c7118fc",
+  "fields": {
+    "name": "Amazon Kuiper Manufacturing Enterprises LLC",
+    "slug": "amazon-kuiper-manufacturing-enterprises-llc",
+    "description": "Amazon Kuiper Manufacturing Enterprises LLC is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:06:58.876Z",
+    "updated_at": "2025-10-24T20:06:58.876Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "4b3d4bb5-d80b-42c4-8683-e90b2251c917",
+  "fields": {
+    "name": "Defense Health Agency",
+    "slug": "defense-health-agency",
+    "description": "Defense Health Agency is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:44:34.044Z",
+    "updated_at": "2025-11-12T15:44:34.044Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "4b43a638-f5da-49d2-a039-e551b28e5dbe",
+  "fields": {
+    "name": "Bentley University",
+    "slug": "bentley-university",
+    "description": "Bentley University is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:00:42.188Z",
+    "updated_at": "2025-11-12T16:00:42.188Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "4b44eb58-2dc0-41d1-9863-73760f33d3bc",
+  "fields": {
+    "name": "Imagine One Technology & Management",
+    "slug": "imagine-one-technology-management",
+    "description": "Imagine One Technology & Management is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-24T20:07:04.799Z",
+    "updated_at": "2025-10-24T20:07:04.799Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "4b48ec2b-6905-4dac-a93e-6d8dcf0f19b3",
+  "fields": {
+    "name": "CTG",
+    "slug": "ctg",
+    "description": "CTG is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T15:59:33.139Z",
+    "updated_at": "2025-11-12T15:59:33.139Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "4b60d596-b29a-48bf-bbb8-824a644baf2b",
+  "fields": {
+    "name": "KamisPro",
+    "slug": "kamispro",
+    "description": "KamisPro is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-11-12T16:03:04.965Z",
+    "updated_at": "2025-11-12T16:03:04.965Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "4be56c87-21f5-4561-b001-46e5021a7e09",
+  "fields": {
+    "name": "eSearchPro, Inc.",
+    "slug": "esearchpro-inc",
+    "description": "eSearchPro, Inc. is hiring.",
+    "website_url": "",
+    "logo_url": "",
+    "industry": "",
+    "company_size": "",
+    "headquarters_city": "",
+    "headquarters_state": "",
+    "is_verified": false,
+    "created_at": "2025-10-27T14:56:59.589Z",
+    "updated_at": "2025-10-27T14:56:59.589Z"
+  }
+},
+{
+  "model": "companies.company",
+  "pk": "4d15b5da-53fc-4152-b53b-caecae4d5d90",
+  "fields": {
+    "name": 
