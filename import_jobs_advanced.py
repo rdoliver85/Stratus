@@ -210,7 +210,7 @@ def import_from_adzuna(search_term='software', location='United States', max_res
                     job = Job.objects.create(
                         title=title[:200],
                         slug=slug,
-                        description=f"{description}\n\nSource: Adzuna (ID: {job_hash[:16]})",
+                        description=description,
                         company=company,
                         employment_type=determine_employment_type(title, description),
                         experience_level=determine_experience_level(title, description),
@@ -402,7 +402,7 @@ def import_from_jsearch(query='Python developer', max_results=100):
                     job = Job.objects.create(
                         title=title[:200],
                         slug=slug,
-                        description=f"{description}\n\nSource: JSearch (ID: {job_hash[:16]})",
+                        description=description,
                         company=company,
                         employment_type=determine_employment_type(title, description),
                         experience_level=determine_experience_level(title, description),
