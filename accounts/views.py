@@ -78,7 +78,7 @@ def logout_view(request):
     """User logout view"""
     logout(request)
     messages.success(request, "You've been logged out successfully.")
-    return redirect('job_list')
+    return redirect('public_site:homepage')  # Or use '/'
 
 @login_required
 def profile_view(request):
