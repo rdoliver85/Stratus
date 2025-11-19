@@ -4,7 +4,7 @@
 
 {% block content %}
 <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-    
+
     <!-- Back Button -->
     <a href="{% url 'public_site:job_list' %}" class="inline-flex items-center text-blue-600 hover:text-blue-700 mb-6">
         ← Back to Jobs
@@ -24,19 +24,19 @@
                 🎖️ Veteran Friendly
             </div>
             {% endif %}
-            
+
             {% if job.veteran_preference %}
             <div class="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold">
                 ✓ Veteran Preference
             </div>
             {% endif %}
-            
+
             {% if job.security_clearance != 'none' %}
             <div class="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold">
                 🔒 {{ job.get_security_clearance_display }} Required
             </div>
             {% endif %}
-            
+
             {% if job.offers_transition_support %}
             <div class="bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold">
                 🤝 Transition Support Available
@@ -50,12 +50,12 @@
                 <span class="text-gray-600">Location:</span>
                 <p class="font-medium text-gray-900">{{ location_display }}</p>
             </div>
-            
+
             <div>
                 <span class="text-gray-600">Employment Type:</span>
                 <p class="font-medium text-gray-900">{{ job.get_employment_type_display|default:"Not specified" }}</p>
             </div>
-            
+
             <div>
                 <span class="text-gray-600">Work Arrangement:</span>
                 <p class="font-medium text-gray-900">
@@ -69,21 +69,21 @@
     {% if job.military_skills_valued or job.applicable_mos_codes or job.veteran_benefits %}
     <div class="glass rounded-xl p-8 mb-6 border-l-4 border-blue-600">
         <h2 class="text-2xl font-bold text-gray-900 mb-4">For Veterans</h2>
-        
+
         {% if job.military_skills_valued %}
         <div class="mb-4">
             <h3 class="font-semibold text-gray-900 mb-2">Valued Military Skills:</h3>
             <p class="text-gray-700 whitespace-pre-line">{{ job.military_skills_valued }}</p>
         </div>
         {% endif %}
-        
+
         {% if job.applicable_mos_codes %}
         <div class="mb-4">
             <h3 class="font-semibold text-gray-900 mb-2">Applicable MOS Codes:</h3>
             <p class="text-gray-700">{{ job.applicable_mos_codes }}</p>
         </div>
         {% endif %}
-        
+
         {% if job.veteran_benefits %}
         <div>
             <h3 class="font-semibold text-gray-900 mb-2">Veteran Benefits:</h3>
@@ -131,19 +131,38 @@
     </div>
     {% endif %}
 
-   
-    <!-- Apply Button -->
-    <div class="glass-dark rounded-xl p-8 text-center">
-    {% if job.application_url %}
-    <a href="{{ job.application_url }}" target="_blank" class="inline-block bg-blue-600 px-8 py-4 rounded-xl text-white font-bold text-lg hover:bg-blue-700 hover:shadow-xl transition">
-        Apply for This Position →
-    </a>
-    <p class="text-gray-600 text-sm mt-3">Opens in new window</p>
-    {% else %}
-    <button class="bg-gray-400 px-8 py-4 rounded-xl text-white font-bold text-lg cursor-not-allowed">
-        Application Link Not Available
-    </button>
-    {% endif %}
+    <!-- Apply Buttons -->
+    <div class="glass-dark rounded-xl p-8">
+        <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <!-- External Apply Button -->
+            {% if job.application_url %}
+                <a href="{{ job.application_url }}" target="_blank" 
+                   class="bg-blue-600 px-8 py-4 rounded-xl text-white font-bold text-lg hover:bg-blue-700 hover:shadow-xl transition inline-block">
+                    Apply for This Position →
+                </a>
+            {% else %}
+                <button class="bg-gray-400 px-8 py-4 rounded-xl text-white font-bold text-lg cursor-not-allowed">
+                    Application Link Not Available
+                </button>
+            {% endif %}
+            
+            <!-- Mark as Applied Button (Only for logged-in users) -->
+            {% if user.is_authenticated %}
+                {% if is_applied %}
+                    <span class="bg-green-600 text-white px-6 py-4 rounded-xl font-bold text-lg inline-block">
+                        ✓ Marked as Applied
+                    </span>
+                {% else %}
+                    <a href="{% url 'jobs:mark_applied' job.job_id %}" 
+                       class="bg-gray-600 px-6 py-4 rounded-xl text-white font-bold text-lg hover:bg-gray-700 transition inline-block">
+                        Mark as Applied
+                    </a>
+                {% endif %}
+            {% endif %}
+        </div>
+        {% if job.application_url %}
+            <p class="text-gray-600 text-sm mt-4 text-center">External application opens in new window</p>
+        {% endif %}
     </div>
 
     <!-- Related Jobs -->

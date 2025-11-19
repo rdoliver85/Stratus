@@ -1,5 +1,6 @@
 from django.db import models
 from companies.models import Company
+from django.contrib.auth.models import User
 import uuid
 
 class Job(models.Model):
@@ -88,3 +89,34 @@ class Job(models.Model):
     
     def __str__(self):
         return self.title
+
+class FavoriteJob(models.Model):
+    """Track jobs saved/favorited by users"""
+    favorite_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='favorite_jobs')
+    job = models.ForeignKey(Job, on_delete=models.CASCADE, related_name='favorited_by')
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        db_table = 'favorite_jobs'
+        unique_together = ('user', 'job')  # Prevent duplicate favorites
+        ordering = ['-created_at']
+    
+    def __str__(self):
+        return f"{self.user.username} - {self.job.title}"
+
+class JobApplication(models.Model):
+    """Track jobs that users have applied to"""
+    application_id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='job_applications')
+    job = models.ForeignKey(Job, on_delete=models.CASCADE, related_name='applications')
+    applied_date = models.DateTimeField(auto_now_add=True)
+    notes = models.TextField(blank=True, help_text="Personal notes about this application")
+    
+    class Meta:
+        db_table = 'job_applications'
+        unique_together = ('user', 'job')  # Can only apply once per job
+        ordering = ['-applied_date']
+    
+    def __str__(self):
+        return f"{self.user.username} applied to {self.job.title}"

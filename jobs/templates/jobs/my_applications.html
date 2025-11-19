@@ -1,0 +1,73 @@
+{% extends 'public_site/base.html' %}
+
+{% block title %}My Applications - Stratus{% endblock %}
+
+{% block content %}
+<div class="container mx-auto px-4 py-8 max-w-6xl">
+    <h1 class="text-4xl font-bold mb-8">My Applications</h1>
+    
+    {% if messages %}
+        {% for message in messages %}
+            <div class="mb-4 p-4 rounded {% if message.tags == 'error' %}bg-red-100 text-red-700{% else %}bg-green-100 text-green-700{% endif %}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+    
+    {% if applications %}
+        <p class="text-gray-600 mb-6">You have applied to {{ applications|length }} job{{ applications|length|pluralize }}.</p>
+        
+        <div class="space-y-4">
+            {% for application in applications %}
+                <div class="glass-dark rounded-lg p-6 hover:shadow-lg transition">
+                    <div class="flex justify-between items-start">
+                        <div class="flex-1">
+                            <h2 class="text-2xl font-bold text-gray-800 mb-2">
+                                <a href="{% url 'public_site:job_detail' application.job.job_id %}" class="hover:text-blue-600">
+                                    {{ application.job.title }}
+                                </a>
+                            </h2>
+                            <p class="text-lg text-gray-600 mb-2">{{ application.job.company.name }}</p>
+                            <p class="text-gray-600 mb-2">
+                                {% if application.job.location_city %}
+                                    📍 {{ application.job.location_city }}, {{ application.job.location_state }}
+                                {% endif %}
+                                {% if application.job.is_remote %}
+                                    | 🏠 Remote
+                                {% endif %}
+                            </p>
+                            
+                            {% if application.job.is_veteran_friendly %}
+                                <span class="inline-block bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full mr-2">
+                                    🎖️ Veteran Friendly
+                                </span>
+                            {% endif %}
+                            
+                            {% if application.job.security_clearance != 'none' %}
+                                <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
+                                    🔒 Clearance: {{ application.job.get_security_clearance_display }}
+                                </span>
+                            {% endif %}
+                            
+                            <p class="text-sm text-gray-500 mt-3">Applied {{ application.applied_date|timesince }} ago</p>
+                        </div>
+                        
+                        <div class="ml-4">
+                            <span class="bg-green-600 text-white px-4 py-2 rounded inline-block">
+                                ✓ Applied
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    {% else %}
+        <div class="text-center py-12">
+            <p class="text-xl text-gray-600 mb-4">You haven't marked any jobs as applied yet.</p>
+            <a href="{% url 'public_site:job_list' %}" class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
+                Browse Jobs
+            </a>
+        </div>
+    {% endif %}
+</div>
+{% endblock %}
