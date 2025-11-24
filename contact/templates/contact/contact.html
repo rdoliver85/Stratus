@@ -1,0 +1,118 @@
+{% extends 'public_site/base.html' %}
+
+{% block title %}Contact Us - Stratus Jobs{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <h1 class="text-center mb-4">Contact Us</h1>
+            
+            <p class="text-center lead mb-5">
+                Have a question or need support? Send us a message and we'll get back to you within 24-48 hours.
+            </p>
+            
+            {% if messages %}
+                {% for message in messages %}
+                    <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+                        {{ message }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </div>
+                {% endfor %}
+            {% endif %}
+            
+            <div class="card border-0 shadow-sm mb-5">
+                <div class="card-body p-5">
+                    <form method="post" novalidate>
+                        {% csrf_token %}
+                        
+                        <div class="mb-4">
+                            <label for="id_name" class="form-label">Name *</label>
+                            <input type="text" 
+                                   name="name" 
+                                   maxlength="100" 
+                                   required 
+                                   class="form-control form-control-lg" 
+                                   placeholder="Your Name" 
+                                   id="id_name" 
+                                   value="{{ form.name.value|default:'' }}">
+                            {% if form.name.errors %}
+                                <div class="text-danger small mt-2">
+                                    {{ form.name.errors.0 }}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="id_email" class="form-label">Email Address *</label>
+                            <input type="email" 
+                                   name="email" 
+                                   required 
+                                   class="form-control form-control-lg" 
+                                   placeholder="your.email@example.com" 
+                                   id="id_email" 
+                                   value="{{ form.email.value|default:'' }}">
+                            {% if form.email.errors %}
+                                <div class="text-danger small mt-2">
+                                    {{ form.email.errors.0 }}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="id_subject" class="form-label">Subject *</label>
+                            <input type="text" 
+                                   name="subject" 
+                                   maxlength="200" 
+                                   required 
+                                   class="form-control form-control-lg" 
+                                   placeholder="Subject" 
+                                   id="id_subject" 
+                                   value="{{ form.subject.value|default:'' }}">
+                            {% if form.subject.errors %}
+                                <div class="text-danger small mt-2">
+                                    {{ form.subject.errors.0 }}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="id_message" class="form-label">Message *</label>
+                            <textarea name="message" 
+                                      cols="40" 
+                                      rows="8" 
+                                      maxlength="2000" 
+                                      required 
+                                      class="form-control form-control-lg" 
+                                      placeholder="Your message..." 
+                                      id="id_message">{{ form.message.value|default:'' }}</textarea>
+                            {% if form.message.errors %}
+                                <div class="text-danger small mt-2">
+                                    {{ form.message.errors.0 }}
+                                </div>
+                            {% endif %}
+                        </div>
+                        
+                        <!-- Honeypot field (hidden from users) -->
+                        <input type="text" name="honeypot" style="display:none;" tabindex="-1" autocomplete="off">
+                        
+                        <div class="text-center mt-4">
+                            <button type="submit" class="btn btn-primary" style="padding: 12px 40px; font-size: 18px; font-weight: 500; border-radius: 5px; background-color: #0d6efd; color: white; border: none; cursor: pointer;">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <h5 class="mb-3">Other Ways to Reach Us</h5>
+                <p>
+                    <strong>For urgent issues:</strong> Please email us directly at<br>
+                    <a href="mailto:windsoftechnology@gmail.com" class="text-decoration-none">windsoftechnology@gmail.com</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

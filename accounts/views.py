@@ -1,3 +1,5 @@
+from django_ratelimit.decorators import ratelimit
+from django.views.decorators.cache import never_cache
 from django.shortcuts import render, redirect
 from django.contrib.auth import login, authenticate, logout
 from django.contrib.auth.decorators import login_required
@@ -6,7 +8,16 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from .models import UserProfile
 
+@never_cache
+@ratelimit(key='ip', rate='3/h', method='POST')
 def register_view(request):
+    # Check if rate limited
+    if getattr(request, 'limited', False):
+        messages.error(
+            request,
+            'Too many registration attempts. Please try again later.'
+        )
+        return render(request, 'accounts/register.html', {'form': UserCreationForm()})
     """User registration view"""
     if request.user.is_authenticated:
         return redirect('profile')
@@ -52,8 +63,18 @@ def register_view(request):
         return redirect('login')
     
     return render(request, 'accounts/register.html')
-
+    
+@never_cache
+@ratelimit(key='ip', rate='5/m', method='POST')
+@ratelimit(key='user', rate='5/m', method='POST')
 def login_view(request):
+    # Check if rate limited
+    if getattr(request, 'limited', False):
+        messages.error(
+            request, 
+            'Too many login attempts. Please wait a few minutes and try again.'
+        )
+        return render(request, 'accounts/login.html', {'form': AuthenticationForm()})
     """User login view"""
     if request.user.is_authenticated:
         return redirect('profile')

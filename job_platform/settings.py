@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'companies',
     'application',
     'public_site',
+    'contact',
 ]
 
 # Authentication settings
