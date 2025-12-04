@@ -30,22 +30,22 @@
                             <p class="text-lg text-gray-600 mb-2">{{ application.job.company.name }}</p>
                             <p class="text-gray-600 mb-2">
                                 {% if application.job.location_city %}
-                                    📍 {{ application.job.location_city }}, {{ application.job.location_state }}
+                                     {{ application.job.location_city }}, {{ application.job.location_state }}
                                 {% endif %}
                                 {% if application.job.is_remote %}
-                                    | 🏠 Remote
+                                    | Remote
                                 {% endif %}
                             </p>
                             
                             {% if application.job.is_veteran_friendly %}
                                 <span class="inline-block bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full mr-2">
-                                    🎖️ Veteran Friendly
+                                     Veteran Friendly
                                 </span>
                             {% endif %}
                             
                             {% if application.job.security_clearance != 'none' %}
                                 <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
-                                    🔒 Clearance: {{ application.job.get_security_clearance_display }}
+                                     Clearance: {{ application.job.get_security_clearance_display }}
                                 </span>
                             {% endif %}
                             

@@ -21,7 +21,7 @@
         <div class="flex flex-wrap gap-3 mb-6">
             {% if job.is_veteran_friendly %}
             <div class="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold">
-                🎖️ Veteran Friendly
+                ️ Veteran Friendly
             </div>
             {% endif %}
 
@@ -33,13 +33,13 @@
 
             {% if job.security_clearance != 'none' %}
             <div class="bg-red-600 text-white px-4 py-2 rounded-lg font-semibold">
-                🔒 {{ job.get_security_clearance_display }} Required
+                 {{ job.get_security_clearance_display }} Required
             </div>
             {% endif %}
 
             {% if job.offers_transition_support %}
             <div class="bg-purple-600 text-white px-4 py-2 rounded-lg font-semibold">
-                🤝 Transition Support Available
+                 Transition Support Available
             </div>
             {% endif %}
         </div>

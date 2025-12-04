@@ -30,22 +30,22 @@
                             <p class="text-lg text-gray-600 mb-2">{{ favorite.job.company.name }}</p>
                             <p class="text-gray-600 mb-2">
                                 {% if favorite.job.location_city %}
-                                    📍 {{ favorite.job.location_city }}, {{ favorite.job.location_state }}
+                                    {{ favorite.job.location_city }}, {{ favorite.job.location_state }}
                                 {% endif %}
                                 {% if favorite.job.is_remote %}
-                                    | 🏠 Remote
+                                    |  Remote
                                 {% endif %}
                             </p>
                             
                             {% if favorite.job.is_veteran_friendly %}
                                 <span class="inline-block bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full mr-2">
-                                    🎖️ Veteran Friendly
+                                     Veteran Friendly
                                 </span>
                             {% endif %}
                             
                             {% if favorite.job.security_clearance != 'none' %}
                                 <span class="inline-block bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">
-                                    🔒 Clearance: {{ favorite.job.get_security_clearance_display }}
+                                     Clearance: {{ favorite.job.get_security_clearance_display }}
                                 </span>
                             {% endif %}
                             
