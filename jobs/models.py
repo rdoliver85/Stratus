@@ -13,6 +13,8 @@ class Job(models.Model):
     responsibilities = models.TextField(blank=True, null=True)
     benefits = models.TextField(blank=True, null=True)
     application_url = models.URLField(max_length=500, blank=True, null=True)
+
+    import_hash = models.CharField(max_length=32, unique=True, db_index=True, blank=True, null=True, help_text='MD5 hash')
     
     EMPLOYMENT_TYPES = [
         ('full_time', 'Full Time'),

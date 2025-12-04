@@ -185,7 +185,7 @@ def import_from_adzuna(search_term='software', location='United States', max_res
                     
                     # Check for duplicates
                     job_hash = generate_job_hash(title, company_name, location_str)
-                    if Job.objects.filter(description__contains=job_hash[:16]).exists():
+                    if Job.objects.filter(import_hash=job_hash).exists():
                         continue
                     
                     description = clean_html(job_data.get('description', ''))
@@ -378,7 +378,7 @@ def import_from_jsearch(query='Python developer', max_results=100):
                     # Check for duplicates
                     location = job_data.get('job_city', '') + job_data.get('job_state', '')
                     job_hash = generate_job_hash(title, company_name, location)
-                    if Job.objects.filter(description__contains=job_hash[:16]).exists():
+                    if Job.objects.filter(import_hash=job_hash).exists():
                         continue
                     
                     company = get_or_create_company(company_name)

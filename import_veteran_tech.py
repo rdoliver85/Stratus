@@ -150,7 +150,7 @@ def import_tech_veteran_adzuna(search_term, max_results=30):
                 company_name = job_data.get('company', {}).get('display_name', 'Company')
                 
                 job_hash = generate_job_hash(title, company_name)
-                if Job.objects.filter(slug__contains=job_hash[:8]).exists():
+                if Job.objects.filter(import_hash=job_hash).exists():
                     continue
                 
                 company = get_or_create_company(company_name)
@@ -239,7 +239,7 @@ def import_tech_veteran_jsearch(search_term, max_results=25):
                 company_name = job_data.get('employer_name', 'Company')
                 
                 job_hash = generate_job_hash(title, company_name)
-                if Job.objects.filter(slug__contains=job_hash[:8]).exists():
+                if Job.objects.filter(import_hash=job_hash).exists():
                     continue
                 
                 company = get_or_create_company(company_name)
