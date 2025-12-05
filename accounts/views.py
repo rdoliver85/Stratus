@@ -137,3 +137,6 @@ def profile_view(request):
         'user': request.user,
     }
     return render(request, 'accounts/profile.html', context)
+    
+    def hello_view(request):
+    return HttpResponse("Hello World!")
