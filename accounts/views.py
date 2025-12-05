@@ -77,10 +77,9 @@ def register_view(request):
 @ratelimit(key='user', rate='5/m', method='POST')
 def login_view(request):
     form = AuthenticationForm(request, data=request.POST or None)
-    # Check if rate limited
     if getattr(request, 'limited', False):
         messages.error(
-            request,
+            request, 
             'Too many login attempts. Please wait a few minutes and try again.'
         )
         return render(request, 'accounts/login.html', {'form': form})
@@ -89,8 +88,8 @@ def login_view(request):
     if request.method == 'POST':
         if form.is_valid():
             user = authenticate(request,
-                                username=form.cleaned_data.get('username'),
-                                password=form.cleaned_data.get('password'))
+                                username=form.cleaned_data['username'],
+                                password=form.cleaned_data['password'])
             if user is not None:
                 login(request, user)
                 messages.success(request, f"Welcome back, {user.username}!")
