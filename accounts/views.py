@@ -8,6 +8,13 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from .models import UserProfile
 
+def test_db_view(request):
+    try:
+        count = User.objects.count()
+        return HttpResponse(f"User count: {count}")
+    except Exception as e:
+        return HttpResponse(f"DB Error: {e}")
+        
 @never_cache
 @ratelimit(key='ip', rate='3/h', method='POST')
 def register_view(request):
