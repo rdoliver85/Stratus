@@ -17,5 +17,6 @@ urlpatterns = [
     path(ADMIN_URL, admin.site.urls),  # Scrambled admin URL
     path('accounts/', include('accounts.urls')),
     path('contact/', include('contact.urls')),
+    path('jobs/', include('jobs.urls')),
     path('', include('public_site.urls')),
 ]
