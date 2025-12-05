@@ -148,7 +148,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # SECURITY - 
 DEBUG = True # Keep True for now since you're developing, but False for any external access
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']  # Update for production
+ALLOWED_HOSTS = ['stratusjobs.com']  # Update for production
 
 # Security Headers
 SECURE_BROWSER_XSS_FILTER = True
@@ -180,22 +180,27 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-# Logging for security events
 LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'handlers': {
-        'file': {
-            'level': 'WARNING',
-            'class': 'logging.FileHandler',
-            'filename': r'C:\JobPlatform\logs\django.log',
+        'console': {
+            'class': 'logging.StreamHandler',
         },
+        # Optional: add a file handler if you want local logs
+        # 'file': {
+        #     'level': 'ERROR',
+        #     'class': 'logging.FileHandler',
+        #     'filename': '/app/django-error.log',
+        # },
     },
-    'loggers': {
-        'django': {
-            'handlers': ['file'],
-            'level': 'WARNING',
-            'propagate': True,
-        },
+    'root': {
+        'handlers': ['console'],
+        'level': 'WARNING',  # Or 'ERROR'
+    },
+    'django': {
+        'handlers': ['console'],
+        'level': 'ERROR',
+        'propagate': False,
     },
 }
