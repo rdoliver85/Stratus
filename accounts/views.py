@@ -138,5 +138,5 @@ def profile_view(request):
     }
     return render(request, 'accounts/profile.html', context)
     
-    def hello_view(request):
+def hello_view(request):
     return HttpResponse("Hello World!")
