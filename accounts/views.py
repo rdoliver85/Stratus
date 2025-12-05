@@ -7,6 +7,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib import messages
 from django.contrib.auth.models import User
 from .models import UserProfile
+from django.http import HttpResponse
 
 def test_db_view(request):
     try:
