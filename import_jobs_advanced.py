@@ -39,7 +39,7 @@ API_CONFIGS = {
     'jsearch': {
         'api_key': 'eecba37741msh8aab8cab5e05f9ep185a20jsn9877c391a7b3',  # From RapidAPI
         'base_url': 'https://jsearch.p.rapidapi.com/search',
-        'enabled': True,
+        'enabled': False,
     }
 }
 
