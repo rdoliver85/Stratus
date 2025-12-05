@@ -76,32 +76,31 @@ def register_view(request):
 @ratelimit(key='ip', rate='5/m', method='POST')
 @ratelimit(key='user', rate='5/m', method='POST')
 def login_view(request):
+    form = AuthenticationForm(request, data=request.POST or None)
     # Check if rate limited
     if getattr(request, 'limited', False):
         messages.error(
-            request, 
+            request,
             'Too many login attempts. Please wait a few minutes and try again.'
         )
-        return render(request, 'accounts/login.html', {'form': AuthenticationForm()})
-    """User login view"""
+        return render(request, 'accounts/login.html', {'form': form})
     if request.user.is_authenticated:
         return redirect('profile')
-    
     if request.method == 'POST':
-        username = request.POST.get('username')
-        password = request.POST.get('password')
-        
-        user = authenticate(request, username=username, password=password)
-        
-        if user is not None:
-            login(request, user)
-            messages.success(request, f"Welcome back, {user.username}!")
-            next_url = request.GET.get('next', 'profile')
-            return redirect(next_url)
+        if form.is_valid():
+            user = authenticate(request,
+                                username=form.cleaned_data.get('username'),
+                                password=form.cleaned_data.get('password'))
+            if user is not None:
+                login(request, user)
+                messages.success(request, f"Welcome back, {user.username}!")
+                next_url = request.GET.get('next', 'profile')
+                return redirect(next_url)
+            else:
+                messages.error(request, "Invalid username or password.")
         else:
-            messages.error(request, "Invalid username or password.")
-    
-    return render(request, 'accounts/login.html')
+            messages.error(request, "Please correct the errors below.")
+    return render(request, 'accounts/login.html', {'form': form})
 
 def logout_view(request):
     """User logout view"""
