@@ -4,7 +4,7 @@ A comprehensive job aggregation platform designed to connect veterans with techn
 
 ## Project Overview
 
-Stratus is a Master's thesis project developed for the Master of Science in Information Technology program at Arkansas Tech University. The platform addresses the unique challenges veterans face when transitioning to civilian technology careers by aggregating job listings from multiple sources and highlighting positions that value military experience, security clearances, and veteran benefits.
+Stratus is a Master's independent internship project developed for the Master of Science in Information Technology program at Arkansas Tech University. The platform addresses the unique challenges veterans face when transitioning to civilian technology careers by aggregating job listings from multiple sources and highlighting positions that value military experience, security clearances, and veteran benefits.
 
 **Live Platform**: https://www.stratusjobs.com
 
@@ -113,11 +113,11 @@ The platform utilizes a relational database design with 15 tables:
 **Author**: Richard Oliver
 **Submission Date**: December 2025
 
-This thesis project demonstrates practical application of advanced database design, API integration, web application security, and user-centered design principles for a specialized user demographic.
+This independent internship project demonstrates practical application of advanced database design, API integration, web application security, and user-centered design principles for a specialized user demographic.
 
 ## Documentation
 
-High-resolution diagrams for thesis documentation are available in the `thesis_diagrams/` directory:
+High-resolution diagrams for independent internship documentation are available in the `independent internship_diagrams/` directory:
 - System Architecture Diagram
 - Database Entity-Relationship Diagram
 - API Integration Flow Diagram
