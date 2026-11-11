@@ -1,6 +1,7 @@
 import requests
 
-api_key = "eecba37741msh8aab8cab5e05f9ep185a20jsn9877c391a7b3"  # Replace with your actual key
+import os
+api_key = os.environ["RAPIDAPI_KEY"]
 
 headers = {
     'X-RapidAPI-Key': api_key,

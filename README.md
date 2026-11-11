@@ -1,127 +1,75 @@
-# Stratus - Veteran-Focused Technology Job Platform
+# Stratus
 
-A comprehensive job aggregation platform designed to connect veterans with technology career opportunities. This system integrates multiple job APIs to provide a unified search experience with veteran-specific features and preferences.
+Stratus is a technology job aggregation site. It pulls listings from several job APIs, cleans and de-duplicates them, and presents them in one searchable place.
 
-## Project Overview
+The site was hosted at stratusjobs.com on Railway and has since been taken down, so it is no longer publicly available. The code is kept here as a record of the project.
 
-Stratus is a Master's independent internship project developed for the Master of Science in Information Technology program at Arkansas Tech University. The platform addresses the unique challenges veterans face when transitioning to civilian technology careers by aggregating job listings from multiple sources and highlighting positions that value military experience, security clearances, and veteran benefits.
+It started as my independent internship project for the Master of Science in Information Technology at Arkansas Tech University. It was first planned as a veteran-only job board. Testing showed the APIs return too few positions that are clearly veteran-preferred, so I changed the scope to general technology jobs. Veteran features remain as optional extras (profile fields, a veteran-friendly filter, security clearance tagging).
 
-**Live Platform**: https://www.stratusjobs.com
+## State at last deployment
 
-## Current Metrics
+- About 516 validated technology jobs from 740+ companies
+- Sources: Adzuna, USAJobs, JSearch (RapidAPI)
+- Data cleanup removed 482 duplicates and 535 expired listings
+- Was hosted on Railway with PostgreSQL, deployed from GitHub on push to main
 
-- **Total Jobs**: 1,080 active listings
-- **Companies**: 740 unique employers
-- **API Sources**: Adzuna (approximately 700 jobs), USAJobs (approximately 380 jobs)
-- **Database Tables**: 15 tables managing users, profiles, jobs, companies, and applications
+## Stack
 
-## Technology Stack
+- Python, Django 4.2.7
+- PostgreSQL 15
+- Bootstrap 5, Django templates
+- Gunicorn, WhiteNoise
+- Railway (hosting), GoDaddy (domain)
 
-### Backend Framework
-- **Django**: 4.2.7
-- **Python**: 3.11+
-- **WSGI Server**: Gunicorn
+## Features
 
-### Database
-- **PostgreSQL**: 15
-- **Hosting**: Railway.app (turntable.proxy.rlwy.net:26138)
+- Job search and filtering by keyword, location, salary and employment type
+- User accounts and profiles, with optional military service fields
+- Saved jobs and application tracking
+- Contact form with spam protection
+- Admin panel for jobs, companies and users
 
-### Frontend
-- **Template Engine**: Django Templates
-- **UI Framework**: Bootstrap 5
-- **Markup**: HTML5/CSS3
+## Import pipeline
 
-### External APIs
-- **Adzuna API**: Job aggregation with app_id/key authentication
-- **USAJobs API**: Government positions with header-based authentication
-- **JSearch API**: Currently disabled
+1. Query each API across a set of technology search terms
+2. Parse responses and normalize location, salary and employment type
+3. Filter out non-technology roles with include and exclude keywords
+4. Skip duplicates by import hash and by title plus company
+5. Create or match the company record
+6. Insert in atomic transactions
+7. Check that each application URL still works, so expired listings can be removed
+8. Log counts and errors for each run
 
-### Deployment & Infrastructure
-- **Hosting Platform**: Railway.app
-- **Version Control**: GitHub
-- **CI/CD**: Automated deployment on push to main branch
+While it was live, scheduled jobs refreshed listings daily, backed up the database with 7-day retention, and sent health alerts by email.
 
-### Security Features
-- **Password Hashing**: PBKDF2-SHA256 (390,000 iterations)
-- **Rate Limiting**: django-ratelimit (5 login attempts/min, 3 registrations/hr, 5 contact submissions/hr)
-- **Session Management**: 2-hour timeout, HTTPS-only cookies
-- **Security Headers**: HSTS, X-Frame-Options
+## Security
 
-## Core Features
+- Credentials are read from environment variables and never committed
+- Least-privilege database user
+- Rate limiting on login, registration and contact submissions
+- HTTPS-only cookies, session timeout, HSTS and other security headers
+- Password validation and a custom admin URL
 
-### Job Aggregation
-- Multi-source API integration with intelligent duplicate detection
-- Automated job data normalization and standardization
-- Company profile creation and management
-- URL validation to identify expired listings
+## Repository layout
 
-### Veteran-Specific Features
-- Veteran-friendly job tagging based on keyword analysis
-- Security clearance requirements highlighting
-- Military Occupational Specialty (MOS) code mapping
-- Military skills translation and recognition
-- Veteran preference indicators
-- Military benefits information
+- `accounts/`: authentication and user profiles
+- `companies/`, `jobs/`, `application/`: core data models
+- `public_site/`: public pages and templates
+- `contact/`: contact form
+- `import_jobs_advanced.py`: main multi-API importer
+- `archive/veteran_experiment/`: the original veteran-only import scripts, kept as a record of the scope change
 
-### User Management
-- User authentication and profile management
-- Veteran status and military service tracking
-- Resume upload and storage
-- Job application tracking
-- Favorite jobs management
+## Running locally
 
-### Search Capabilities
-- 14 technology-focused search terms
-- Location-based filtering
-- Salary range filtering
-- Employment type categorization
-- Experience level matching
+```
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+copy .env.example .env   # then fill in your own values
+python manage.py migrate
+python manage.py runserver
+```
 
-## Database Architecture
+## Author
 
-The platform utilizes a relational database design with 15 tables:
-
-**Core Tables**:
-- `auth_user`: Django authentication (built-in)
-- `user_profiles`: Extended user information including veteran status, military branch, years of service, MOS code, security clearance
-- `companies`: Company information (740 records)
-- `jobs`: Job listings with veteran-specific fields (1,080 records)
-- `favorite_jobs`: User-saved jobs
-- `job_applications`: Application tracking and status management
-- `contact_contactmessage`: Contact form submissions
-
-**System Tables**:
-- Django migrations, sessions, admin logs, content types, rate limiting cache
-
-## API Integration Pipeline
-
-1. **Authentication**: API credentials validation (app_id/key for Adzuna, header authorization for USAJobs)
-2. **Query Execution**: Systematic searches across 14 technology job categories and 3 government job codes
-3. **Response Parsing**: JSON data extraction and field mapping
-4. **Data Normalization**: Standardization of location, salary, and employment type fields
-5. **Duplicate Detection**: Indexed lookup by title and company name
-6. **Company Management**: Automatic company record creation or association
-7. **Veteran Tagging**: Keyword-based analysis for military-relevant positions
-8. **Database Insertion**: Atomic transaction processing
-9. **URL Validation**: HTTP verification of application links
-10. **Statistics Logging**: Aggregation metrics and error tracking
-
-## Academic Context
-
-**Institution**: Arkansas Tech University
-**Program**: Master of Science in Information Technology
-**Author**: Richard Oliver
-**Submission Date**: December 2025
-
-This independent internship project demonstrates practical application of advanced database design, API integration, web application security, and user-centered design principles for a specialized user demographic.
-
-## Documentation
-
-High-resolution diagrams for independent internship documentation are available in the `independent internship_diagrams/` directory:
-- System Architecture Diagram
-- Database Entity-Relationship Diagram
-- API Integration Flow Diagram
-
-## License
-
-This project is submitted as academic work for Arkansas Tech University.
+Richard Oliver, Arkansas Tech University, December 2025.
