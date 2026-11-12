@@ -416,7 +416,7 @@ urlpatterns = [
 # python manage.py migrate
 #
 # For Railway (manual migration):
-# $env:PGHOST="turntable.proxy.rlwy.net"
+# $env:PGHOST="your-db-host"
 # $env:PGPORT="26138"
 # $env:PGUSER="postgres"
 # $env:PGPASSWORD="<your-password>"

@@ -59,6 +59,14 @@ While it was live, scheduled jobs refreshed listings daily, backed up the databa
 - `import_jobs_advanced.py`: main multi-API importer
 - `archive/veteran_experiment/`: the original veteran-only import scripts, kept as a record of the scope change
 
+## Diagrams
+
+Generated from the code in this repository by the scripts in `docs/diagrams/` (Graphviz and the Python `diagrams` package):
+
+- `docs/diagrams/01_system_architecture.png`: components, deployment path and security controls
+- `docs/diagrams/02_database_erd.png`: tables and relationships, taken from the Django models
+- `docs/diagrams/03_import_pipeline.png`: how listings are fetched, de-duplicated and stored
+
 ## Running locally
 
 ```
